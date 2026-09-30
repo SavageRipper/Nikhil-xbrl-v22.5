@@ -1,0 +1,2251 @@
+{
+  "all": [
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/NotesSubsidiaryInformation",
+      "primary": "in-ca:DetailsOfSubsidiariesAbstract",
+      "hypercube": "in-ca:DetailsOfSubsidiariesTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:SubsidiariesAxis"
+      ],
+      "members": {
+        "in-gaap:SubsidiariesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/NotesSubsidiaryInformation1",
+      "primary": "in-ca:DetailsOfSubsidiariesWhichAreYetToCommenceOperationsAbstract",
+      "hypercube": "in-ca:DetailsOfSubsidiariesWhichAreYetToCommenceOperationsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:SubsidiariesWhichAreYetToCommenceOperationsAxis"
+      ],
+      "members": {
+        "in-gaap:SubsidiariesWhichAreYetToCommenceOperationsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/NotesSubsidiaryInformation2",
+      "primary": "in-ca:DetailsOfSubsidiariesLiquidatedOrSoldDuringYearAbstract",
+      "hypercube": "in-ca:DetailsOfSubsidiariesLiquidatedOrSoldDuringYearTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:SubsidiariesLiquidatedOrSoldDuringYearAxis"
+      ],
+      "members": {
+        "in-gaap:SubsidiariesLiquidatedOrSoldDuringYearAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/NotesKeyManagerialPersonnelsAndDirectorsRemunerationAndOtherInformation",
+      "primary": "in-ca:DisclosureOfKeyManagerialPersonnelsAndDirectorsAndRemunerationToKeyManagerialPersonnelsAndDirectorsAbstract",
+      "hypercube": "in-ca:DisclosureOfKeyManagerialPersonnelsAndDirectorsAndRemunerationToKeyManagerialPersonnelsAndDirectorsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:KeyManagerialPersonnelsAndDirectorsAxis"
+      ],
+      "members": {
+        "in-ca:KeyManagerialPersonnelsAndDirectorsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosureOfGeneralInformationAboutCompany",
+      "primary": "in-ca:DisclosureOfPrincipalProductOrServicesAbstract",
+      "hypercube": "in-ca:DisclosureOfPrincipalProductOrServicesTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:TypesOfPrincipalProductOrServicesAxis"
+      ],
+      "members": {
+        "in-ca:TypesOfPrincipalProductOrServicesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresAuditorsReport",
+      "primary": "in-ca:DisclosureOfAuditorsQualificationsReservationsOrAdverseRemarksInAuditorsReportAbstract",
+      "hypercube": "in-ca:DisclosureOfAuditorsQualificationsReservationsOrAdverseRemarksInAuditorsReportTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:AuditorsQualificationsReservationsOrAdverseRemarksInAuditorsReportAxis"
+      ],
+      "members": {
+        "in-ca:AuditorsQualificationsReservationsOrAdverseRemarksInAuditorsReportAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresAuditorsReport1",
+      "primary": "in-ca:DetailsRegardingAuditorsAbstract",
+      "hypercube": "in-ca:DetailsRegardingAuditorsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:AuditorsAxis"
+      ],
+      "members": {
+        "in-ca:AuditorsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresSignatoriesOfFinancialStatements",
+      "primary": "in-ca:DetailsOfDirectorsSigningFinancialStatementsAbstract",
+      "hypercube": "in-ca:DetailsOfDirectorsSigningFinancialStatementsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:DirectorsSigningFinancialStatementsAxis"
+      ],
+      "members": {
+        "in-ca:DirectorsSigningFinancialStatementsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresSignatoriesOfFinancialStatements1",
+      "primary": "in-ca:DetailsOfManagerSigningFinancialStatementsAbstract",
+      "hypercube": "in-ca:DetailsOfManagerSigningFinancialStatementsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:ManagerSigningFinancialStatementsAxis"
+      ],
+      "members": {
+        "in-ca:ManagerSigningFinancialStatementsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresDirectorsReport",
+      "primary": "in-ca:DetailsOfContractsArrangementsTransactionsNotAtArmsLengthBasisAbstract",
+      "hypercube": "in-ca:DetailsOfContractsArrangementsTransactionsNotAtArmsLengthBasisTable",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresDirectorsReport",
+      "closed": "true",
+      "dims": [
+        "in-ca:ContractsArrangementsTransactionsNotAtArmsLengthBasisAxis"
+      ],
+      "members": {
+        "in-ca:ContractsArrangementsTransactionsNotAtArmsLengthBasisAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresDirectorsReport1",
+      "primary": "in-ca:DetailsOfMaterialContractsArrangementsTransactionsAtArmsLengthBasisAbstract",
+      "hypercube": "in-ca:DetailsOfMaterialContractsArrangementsTransactionsAtArmsLengthBasisTable",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresDirectorsReport1",
+      "closed": "true",
+      "dims": [
+        "in-ca:MaterialContractsArrangementsTransactionsAtArmsLengthBasisAxis"
+      ],
+      "members": {
+        "in-ca:MaterialContractsArrangementsTransactionsAtArmsLengthBasisAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresDirectorsReport2",
+      "primary": "in-ca:DetailsOfPrincipalBusinessActivitiesContributing10PercentOrMoreOfTotalTurnoverOfCompanyAbstract",
+      "hypercube": "in-ca:DetailsOfPrincipalBusinessActivitiesContributing10PercentOrMoreOfTotalTurnoverOfCompanyTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:PrincipalBusinessActivitiesOfCompanyAxis"
+      ],
+      "members": {
+        "in-ca:PrincipalBusinessActivitiesOfCompanyAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresDirectorsReport3",
+      "primary": "in-ca:ParticularsOfHoldingSubsidiaryAndAssociateCompaniesAbstract",
+      "hypercube": "in-ca:ParticularsOfHoldingSubsidiaryAndAssociateCompaniesTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:ParticularsOfCompaniesAxis"
+      ],
+      "members": {
+        "in-ca:ParticularsOfCompaniesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresDirectorsReport4",
+      "primary": "in-ca:DetailsOfShareholdingPatternAbstract",
+      "hypercube": "in-ca:DetailsOfShareholdingPatternTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:ShareholdingPatternAxis"
+      ],
+      "members": {
+        "in-ca:ShareholdingPatternAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresDirectorsReport5",
+      "primary": "in-ca:DetailsOfShareholdingOfPromotersAbstract",
+      "hypercube": "in-ca:DetailsOfShareholdingOfPromotersTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:PromotersAxis"
+      ],
+      "members": {
+        "in-ca:PromotersAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresDirectorsReport6",
+      "primary": "in-ca:DetailsOfChangeInPromotersShareholdingAbstract",
+      "hypercube": "in-ca:DetailsOfChangeInPromotersShareholdingTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:PromotersAxis",
+        "in-ca:ChangeInShareholdingAxis"
+      ],
+      "members": {
+        "in-ca:PromotersAxis": [],
+        "in-ca:ChangeInShareholdingAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresDirectorsReport7",
+      "primary": "in-ca:DetailsOfShareholdingPatternOfTop10ShareholdersAbstract",
+      "hypercube": "in-ca:DetailsOfShareholdingPatternOfTop10ShareholdersTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:NameOfTop10ShareholderAxis",
+        "in-ca:ChangeInShareholdingAxis"
+      ],
+      "members": {
+        "in-ca:NameOfTop10ShareholderAxis": [],
+        "in-ca:ChangeInShareholdingAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresDirectorsReport8",
+      "primary": "in-ca:DetailsOfShareholdingPatternOfDirectorsAndKeyManagerialPersonnelAbstract",
+      "hypercube": "in-ca:DetailsOfShareholdingPatternOfDirectorsAndKeyManagerialPersonnelTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:DirectorsAndKeyManagerialPersonnelAxis",
+        "in-ca:ChangeInShareholdingAxis"
+      ],
+      "members": {
+        "in-ca:DirectorsAndKeyManagerialPersonnelAxis": [],
+        "in-ca:ChangeInShareholdingAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresDirectorsReport9",
+      "primary": "in-ca:DetailsOfIndebtednessOfCompanyAbstract",
+      "hypercube": "in-ca:DetailsOfIndebtednessOfCompanyTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:IndebtednessAxis"
+      ],
+      "members": {
+        "in-ca:IndebtednessAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresDirectorsReport10",
+      "primary": "in-ca:DetailsOfPenaltyPunishmentCompoundingOfOffenceAbstract",
+      "hypercube": "in-ca:DetailsOfPenaltyPunishmentCompoundingOfOffenceTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:OffenderAxis"
+      ],
+      "members": {
+        "in-ca:OffenderAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresDirectorsReport11",
+      "primary": "in-ca:DetailsRegardingAuditorsQualificationsReservationsAdverseRemarksInAuditorsReportAbstract",
+      "hypercube": "in-ca:DetailsRegardingAuditorsQualificationsReservationsAdverseRemarksInAuditorsReportTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:AuditorsQualificationsReservationsAdverseRemarksInAuditorsReportAxis"
+      ],
+      "members": {
+        "in-ca:AuditorsQualificationsReservationsAdverseRemarksInAuditorsReportAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresDirectorsReport12",
+      "primary": "in-ca:DetailsRegardingCompanySecretaryQualificationOrObservationOrOtherRemarksInSecretarialAuditReportAbstract",
+      "hypercube": "in-ca:DetailsRegardingCompanySecretaryQualificationOrObservationOrOtherRemarksInSecretarialAuditReportTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:CompanySecretaryQualificationOrObservationOrOtherRemarksInSecretarialAuditReportAxis"
+      ],
+      "members": {
+        "in-ca:CompanySecretaryQualificationOrObservationOrOtherRemarksInSecretarialAuditReportAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresDirectorsReport13",
+      "primary": "in-ca:DetailsOfManagerialPersonnelsRemunerationAbstract",
+      "hypercube": "in-ca:DetailsOfManagerialPersonnelsRemunerationTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:ManagerialPersonnelsRemunerationAxis"
+      ],
+      "members": {
+        "in-ca:ManagerialPersonnelsRemunerationAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresDirectorsReport14",
+      "primary": "in-gaap:DisclosuresRelatingToEmployeeStockOptionSchemeAbstract",
+      "hypercube": "in-gaap:DisclosuresRelatingToEmployeeStockOptionSchemeTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CategoriesOfEmployeeStockOptionSchemeAxis"
+      ],
+      "members": {
+        "in-gaap:CategoriesOfEmployeeStockOptionSchemeAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresDirectorsReport15",
+      "primary": "in-gaap:DisclosuresRelatingToEmployeeStockPurchaseSchemeAbstract",
+      "hypercube": "in-gaap:DisclosuresRelatingToEmployeeStockPurchaseSchemeTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CategoriesOfEmployeeStockPurchaseSchemeAxis"
+      ],
+      "members": {
+        "in-gaap:CategoriesOfEmployeeStockPurchaseSchemeAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresDirectorsReport16",
+      "primary": "in-ca:DetailsOfSignatoriesOfBoardReportAbstract",
+      "hypercube": "in-ca:DetailsOfDirectorsSigningBoardReportTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:DirectorsSigningBoardReportAxis"
+      ],
+      "members": {
+        "in-ca:DirectorsSigningBoardReportAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresDirectorsReport/total",
+      "primary": "in-ca:ParticularsOfHoldingSubsidiaryAndAssociateCompaniesAbstract",
+      "hypercube": "in-ca:ParticularsOfHoldingSubsidiaryAndAssociateCompaniesTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [],
+      "members": {}
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-ca/DisclosuresSecretarialAuditReport",
+      "primary": "in-ca:DetailsOfSignatoriesOfSecretarialAuditReportAbstract",
+      "hypercube": "in-ca:DetailsOfSignatoriesOfSecretarialAuditReportTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:SignatoriesOfSecretarialAuditReportAxis"
+      ],
+      "members": {
+        "in-ca:SignatoriesOfSecretarialAuditReportAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital",
+      "primary": "in-gaap:DisclosureOfClassesOfShareCapitalAbstract",
+      "hypercube": "in-gaap:DisclosureOfClassesOfShareCapitalTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfShareCapitalAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfShareCapitalAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital1",
+      "primary": "in-gaap:DisclosureOfShareholdingMoreThanFivePerCentInCompanyAbstract",
+      "hypercube": "in-gaap:DisclosureOfShareholdingMoreThanFivePerCentInCompanyTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfShareCapitalAxis",
+        "in-gaap:NameOfShareholderAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfShareCapitalAxis": [],
+        "in-gaap:NameOfShareholderAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus",
+      "primary": "in-gaap:StatementOfChangesInReservesAbstract",
+      "hypercube": "in-gaap:StatementOfChangesInReservesTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ComponentsOfReservesAxis"
+      ],
+      "members": {
+        "in-gaap:ComponentsOfReservesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesBorrowings",
+      "primary": "in-gaap:DetailsOfBorrowingsAbstract",
+      "hypercube": "in-gaap:ClassificationOfBorrowingsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationBasedOnTimePeriodAxis",
+        "in-gaap:ClassificationOfBorrowingsAxis",
+        "in-gaap:SubclassificationOfBorrowingsAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationBasedOnTimePeriodAxis": [],
+        "in-gaap:ClassificationOfBorrowingsAxis": [],
+        "in-gaap:SubclassificationOfBorrowingsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesBorrowings1",
+      "primary": "in-gaap:DetailsOfBondsOrDebenturesAbstract",
+      "hypercube": "in-gaap:DetailsOfBondsOrDebenturesTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:DetailsOfBondsOrDebenturesAxis"
+      ],
+      "members": {
+        "in-gaap:DetailsOfBondsOrDebenturesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesNoncurrentInvestments",
+      "primary": "in-gaap:DisclosureOfDetailsOfNoncurrentInvestmentsAbstract",
+      "hypercube": "in-gaap:DetailsOfNoncurrentInvestmentsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfNoncurrentInvestmentsAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfNoncurrentInvestmentsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesNoncurrentInvestments/total",
+      "primary": "in-gaap:DisclosureOfDetailsOfNoncurrentInvestmentsAbstract",
+      "hypercube": "in-gaap:DetailsOfNoncurrentInvestmentsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [],
+      "members": {}
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesCurrentInvestments",
+      "primary": "in-gaap:DisclosureOfDetailsOfCurrentInvestmentsAbstract",
+      "hypercube": "in-gaap:DetailsOfCurrentInvestmentsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfCurrentInvestmentsAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfCurrentInvestmentsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesCurrentInvestments/total",
+      "primary": "in-gaap:DisclosureOfDetailsOfCurrentInvestmentsAbstract",
+      "hypercube": "in-gaap:DetailsOfCurrentInvestmentsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [],
+      "members": {}
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets",
+      "primary": "in-gaap:DisclosureOfBreakupOfProvisionsAbstract",
+      "hypercube": "in-gaap:DisclosureOfBreakupOfProvisionsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationBasedOnTimePeriodAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationBasedOnTimePeriodAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets1",
+      "primary": "in-gaap:DisclosureOfDetailsOfProducingPropertiesAbstract",
+      "hypercube": "in-gaap:DisclosureOfDetailsOfProducingPropertiesTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:DetailsOfProducingPropertiesAxis"
+      ],
+      "members": {
+        "in-gaap:DetailsOfProducingPropertiesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets2",
+      "primary": "in-gaap:DisclosureOfDetailsOfPreproducingPropertiesAbstract",
+      "hypercube": "in-gaap:DisclosureOfDetailsOfPreproducingPropertiesTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfPreproducingPropertiesAxis",
+        "in-gaap:DetailsOfPreproducingPropertiesAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfPreproducingPropertiesAxis": [],
+        "in-gaap:DetailsOfPreproducingPropertiesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets3",
+      "primary": "in-gaap:LoansAndAdvancesAbstract",
+      "hypercube": "in-gaap:LoansAndAdvancesTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationBasedOnTimePeriodAxis",
+        "in-gaap:ClassificationOfLoansAndAdvancesAxis",
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationBasedOnTimePeriodAxis": [],
+        "in-gaap:ClassificationOfLoansAndAdvancesAxis": [],
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets4",
+      "primary": "in-gaap:LongTermTradeReceivablesAbstract",
+      "hypercube": "in-gaap:ClassificationOfLongTermTradeReceivablesTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets5",
+      "primary": "in-gaap:ClassificationOfInventoriesAbstract",
+      "hypercube": "in-gaap:ClassificationOfInventoriesTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfInventoriesAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfInventoriesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets6",
+      "primary": "in-gaap:SubclassificationOfTradeReceivablesAbstract",
+      "hypercube": "in-gaap:SubclassificationOfTradeReceivablesTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets7",
+      "primary": "in-ca:DisclosureOfDetailsOfBalancesWithBanksAbstract",
+      "hypercube": "in-ca:DisclosureOfDetailsOfBalancesWithBanksTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:DetailsOfBalancesWithBanksAxis"
+      ],
+      "members": {
+        "in-ca:DetailsOfBalancesWithBanksAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets8",
+      "primary": "in-ca:DisclosureOfDetailsOfBalancesWithForeignBanksAbstract",
+      "hypercube": "in-ca:DisclosureOfDetailsOfBalancesWithForeignBanksTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:DetailsOfBalancesWithForeignBanksAxis"
+      ],
+      "members": {
+        "in-ca:DetailsOfBalancesWithForeignBanksAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesAdditionalDisclosuresOnBalanceSheet",
+      "primary": "in-gaap:DetailsOfDisclosuresRequiredUnderMSMEDAct2006Abstract",
+      "hypercube": "in-gaap:DetailsOfDisclosuresRequiredUnderMSMEDAct2006Table",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:MicroSmallMediumEnterprisesAxis"
+      ],
+      "members": {
+        "in-gaap:MicroSmallMediumEnterprisesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesAdditionalDisclosuresOnBalanceSheet1",
+      "primary": "in-gaap:DetailsOfAcquisitionAndDisposalOfInvestmentsAbstract",
+      "hypercube": "in-gaap:AcquisitionAndDisposalOfInvestmentsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:AcquisitionAndDisposalOfInvestmentsAxis"
+      ],
+      "members": {
+        "in-gaap:AcquisitionAndDisposalOfInvestmentsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesAdditionalDisclosuresOnBalanceSheet2",
+      "primary": "in-ca:DetailsOfShareholdingPatternOfPromotersAndPublicAbstract",
+      "hypercube": "in-ca:DetailsOfShareholdingPatternOfPromotersAndPublicTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-ca:ShareholdingPatternOfPromotersAndPublicAxis",
+        "in-ca:ClassificationBasedOnNationalityOrOriginAxis"
+      ],
+      "members": {
+        "in-ca:ShareholdingPatternOfPromotersAndPublicAxis": [],
+        "in-ca:ClassificationBasedOnNationalityOrOriginAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesTangibleAssets",
+      "primary": "in-gaap:DisclosureOfTangibleAssetsAbstract",
+      "hypercube": "in-gaap:DisclosureOfTangibleAssetsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfTangibleAssetsAxis",
+        "in-gaap:SubClassesOfTangibleAssetsAxis",
+        "in-gaap:CarryingAmountAccumulatedDepreciationAndGrossCarryingAmountAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfTangibleAssetsAxis": [],
+        "in-gaap:SubClassesOfTangibleAssetsAxis": [],
+        "in-gaap:CarryingAmountAccumulatedDepreciationAndGrossCarryingAmountAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesTangibleAssets1",
+      "primary": "in-gaap:DisclosureOfAdditionalInformationTangibleAssetsAbstract",
+      "hypercube": "in-gaap:DisclosureOfAdditionalInformationTangibleAssetsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfTangibleAssetsAxis",
+        "in-gaap:SubClassesOfTangibleAssetsAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfTangibleAssetsAxis": [],
+        "in-gaap:SubClassesOfTangibleAssetsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets",
+      "primary": "in-gaap:DisclosureOfIntangibleAssetsAbstract",
+      "hypercube": "in-gaap:DisclosureOfIntangibleAssetsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfIntangibleAssetsAxis",
+        "in-gaap:SubClassesOfIntangibleAssetsAxis",
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfIntangibleAssetsAxis": [],
+        "in-gaap:SubClassesOfIntangibleAssetsAxis": [],
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets1",
+      "primary": "in-gaap:DisclosureOfAdditionalInformationIntangibleAssetsAbstract",
+      "hypercube": "in-gaap:DisclosureOfAdditionalInformationIntangibleAssetsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfIntangibleAssetsAxis",
+        "in-gaap:SubClassesOfIntangibleAssetsAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfIntangibleAssetsAxis": [],
+        "in-gaap:SubClassesOfIntangibleAssetsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets2",
+      "primary": "in-gaap:DisclosureOfInformationOnMaterialIndividualIntangibleAssetsAbstract",
+      "hypercube": "in-gaap:DisclosureOfInformationOnMaterialIndividualIntangibleAssetsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:MaterialIndividualIntangibleAssetsAxis"
+      ],
+      "members": {
+        "in-gaap:MaterialIndividualIntangibleAssetsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesEmployeeBenefits",
+      "primary": "in-gaap:DisclosureOfDefinedBenefitPlansAbstract",
+      "hypercube": "in-gaap:DisclosureOfDefinedBenefitPlansTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:DefinedBenefitPlansAxis",
+        "in-gaap:DefinedBenefitPlansCategoriesAxis"
+      ],
+      "members": {
+        "in-gaap:DefinedBenefitPlansAxis": [],
+        "in-gaap:DefinedBenefitPlansCategoriesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSegments",
+      "primary": "in-gaap:DisclosureOfPrimaryReportableSegmentsAbstract",
+      "hypercube": "in-gaap:DisclosureOfPrimaryReportableSegmentsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:EnterprisesPrimaryReportableSegmentsAxis"
+      ],
+      "members": {
+        "in-gaap:EnterprisesPrimaryReportableSegmentsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSegments1",
+      "primary": "in-gaap:DisclosureOfSecondaryReportableSegmentsAbstract",
+      "hypercube": "in-gaap:DisclosureOfSecondaryReportableSegmentsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:EnterprisesSecondaryReportableSegmentsAxis"
+      ],
+      "members": {
+        "in-gaap:EnterprisesSecondaryReportableSegmentsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSegments2",
+      "primary": "in-gaap:AdditionalGeographicalDisclosureOfRevenueFromCustomersBasedOnCustomerLocationAbstract",
+      "hypercube": "in-gaap:AdditionalGeographicalDisclosureOfRevenueFromCustomersBasedOnCustomerLocationTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:GeographicalDisclosureOfRevenueFromCustomersBasedOnCustomerLocationAxis"
+      ],
+      "members": {
+        "in-gaap:GeographicalDisclosureOfRevenueFromCustomersBasedOnCustomerLocationAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSegments3",
+      "primary": "in-gaap:AdditionalGeographicalDisclosureOfDetailsOnAssetsBasedOnLocationOfAssetsAbstract",
+      "hypercube": "in-gaap:AdditionalGeographicalDisclosureOfDetailsOnAssetsBasedOnLocationOfAssetsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:GeographicalDisclosureOfDetailsOnAssetsBasedOnLocationOfAssetsAxis"
+      ],
+      "members": {
+        "in-gaap:GeographicalDisclosureOfDetailsOnAssetsBasedOnLocationOfAssetsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesLeases",
+      "primary": "in-gaap:DisclosureOfMinimumFinanceLeasePaymentsAndPresentValueByLesseeAbstract",
+      "hypercube": "in-gaap:DisclosureOfMinimumFinanceLeasePaymentsAndPresentValueByLesseeTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:MaturityAxis"
+      ],
+      "members": {
+        "in-gaap:MaturityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesLeases1",
+      "primary": "in-gaap:DisclosureOfMinimumOperatingLeasePaymentsByLesseeAbstract",
+      "hypercube": "in-gaap:DisclosureOfMinimumOperatingLeasePaymentsByLesseeTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:MaturityAxis"
+      ],
+      "members": {
+        "in-gaap:MaturityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesLeases2",
+      "primary": "in-gaap:DisclosureOfGrossInvestmentInLeaseAndPresentValueOfMinimumLeasePaymentsReceivableInFinanceLeaseByLessorAbstract",
+      "hypercube": "in-gaap:DisclosureOfGrossInvestmentInLeaseAndPresentValueOfMinimumLeasePaymentsReceivableInFinanceLeaseByLessorTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:MaturityAxis"
+      ],
+      "members": {
+        "in-gaap:MaturityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesLeases3",
+      "primary": "in-gaap:DisclosureOfFutureMinimumLeasePaymentsReceivableUnderNonCancellableOperatingLeasesByLessorAbstract",
+      "hypercube": "in-gaap:DisclosureOfFutureMinimumLeasePaymentsReceivableUnderNonCancellableOperatingLeasesByLessorTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:MaturityAxis"
+      ],
+      "members": {
+        "in-gaap:MaturityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesImpairment",
+      "primary": "in-gaap:DisclosureOfImpairmentLossAndReversalOfImpairmentLossAbstract",
+      "hypercube": "in-gaap:DisclosureOfImpairmentLossAndReversalOfImpairmentLossTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfAssetsAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfAssetsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesImpairment1",
+      "primary": "in-gaap:DisclosureOfImpairmentOfAssetsInPrimarySegmentDisclosureFormatAbstract",
+      "hypercube": "in-gaap:DisclosureOfImpairmentOfAssetsInPrimarySegmentDisclosureFormatTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:PrimaryReportableSegmentsAxis"
+      ],
+      "members": {
+        "in-gaap:PrimaryReportableSegmentsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesImpairment2",
+      "primary": "in-gaap:DisclosureOfImpairmentLossRecognisedOrReversedAbstract",
+      "hypercube": "in-gaap:DisclosureOfImpairmentLossRecognisedOrReversedTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:IndividualAssetsOrCashGeneratingUnitsAxis",
+        "in-gaap:ClassesOfAssetsAxis",
+        "in-gaap:PrimaryReportableSegmentsAxis"
+      ],
+      "members": {
+        "in-gaap:IndividualAssetsOrCashGeneratingUnitsAxis": [],
+        "in-gaap:ClassesOfAssetsAxis": [],
+        "in-gaap:PrimaryReportableSegmentsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesRelatedParty",
+      "primary": "in-gaap:DisclosureOfRelationshipAndTransactionsBetweenRelatedPartiesAbstract",
+      "hypercube": "in-gaap:DisclosureOfRelationshipAndTransactionsBetweenRelatedPartiesTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CategoriesOfRelatedPartiesAxis"
+      ],
+      "members": {
+        "in-gaap:CategoriesOfRelatedPartiesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesRelatedParty/total",
+      "primary": "in-gaap:DisclosureOfRelationshipAndTransactionsBetweenRelatedPartiesAbstract",
+      "hypercube": "in-gaap:DisclosureOfRelationshipAndTransactionsBetweenRelatedPartiesTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [],
+      "members": {}
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesDiscontinuingOperations",
+      "primary": "in-gaap:DisclosureOfDiscontinuedOperationsAbstract",
+      "hypercube": "in-gaap:DisclosureOfDiscontinuedOperationsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:DisclosureOfDiscontinuedOperationsAxis"
+      ],
+      "members": {
+        "in-gaap:DisclosureOfDiscontinuedOperationsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesDiscontinuingOperations/total",
+      "primary": "in-gaap:DisclosureOfDiscontinuedOperationsAbstract",
+      "hypercube": "in-gaap:DisclosureOfDiscontinuedOperationsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [],
+      "members": {}
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesOtherProvisionsContingentLiabilitiesAndContingentAssets",
+      "primary": "in-gaap:DisclosureOfOtherProvisionsAbstract",
+      "hypercube": "in-gaap:DisclosureOfOtherProvisionsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfOtherProvisionsAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfOtherProvisionsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesOtherProvisionsContingentLiabilitiesAndContingentAssets1",
+      "primary": "in-gaap:DisclosureOfContingentLiabilitiesAbstract",
+      "hypercube": "in-gaap:DisclosureOfContingentLiabilitiesTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfContingentLiabilitiesAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfContingentLiabilitiesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesAmalgamation",
+      "primary": "in-gaap:DisclosureOfAmalgamationsAbstract",
+      "hypercube": "in-gaap:DisclosureOfAmalgamationsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:AmalgamationsAxis"
+      ],
+      "members": {
+        "in-gaap:AmalgamationsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesInvestmentsInAssociates",
+      "primary": "in-gaap:DescriptionOfInformationOfAssociatesAbstract",
+      "hypercube": "in-gaap:DescriptionOfInformationOfAssociatesTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:InvestmentsInAssociatesAxis"
+      ],
+      "members": {
+        "in-gaap:InvestmentsInAssociatesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesInvestmentsInAssociates1",
+      "primary": "in-ca:DetailsOfAssociatesWhichAreYetToCommenceOperationsAbstract",
+      "hypercube": "in-ca:DetailsOfAssociatesWhichAreYetToCommenceOperationsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:AssociatesWhichAreYetToCommenceOperationsAxis"
+      ],
+      "members": {
+        "in-gaap:AssociatesWhichAreYetToCommenceOperationsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesInvestmentsInAssociates2",
+      "primary": "in-ca:DetailsOfAssociatesLiquidatedOrSoldDuringYearAbstract",
+      "hypercube": "in-ca:DetailsOfAssociatesLiquidatedOrSoldDuringYearTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:AssociatesLiquidatedOrSoldDuringYearAxis"
+      ],
+      "members": {
+        "in-gaap:AssociatesLiquidatedOrSoldDuringYearAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesFinancialReportingOfInterestsInJointVentures",
+      "primary": "in-gaap:DisclosureOfInterestsInSignificantJointVenturesAbstract",
+      "hypercube": "in-gaap:DisclosureOfInterestsInSignificantJointVenturesTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:InterestsInSignificantJointVenturesAxis"
+      ],
+      "members": {
+        "in-gaap:InterestsInSignificantJointVenturesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesFinancialReportingOfInterestsInJointVentures1",
+      "primary": "in-ca:DetailsOfJointVenturesWhichAreYetToCommenceOperationsAbstract",
+      "hypercube": "in-ca:DetailsOfJointVenturesWhichAreYetToCommenceOperationsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:JointVenturesWhichAreYetToCommenceOperationsAxis"
+      ],
+      "members": {
+        "in-gaap:JointVenturesWhichAreYetToCommenceOperationsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesFinancialReportingOfInterestsInJointVentures2",
+      "primary": "in-ca:DetailsOfJointVenturesLiquidatedOrSoldDuringYearAbstract",
+      "hypercube": "in-ca:DetailsOfJointVenturesLiquidatedOrSoldDuringYearTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:JointVenturesLiquidatedOrSoldDuringYearAxis"
+      ],
+      "members": {
+        "in-gaap:JointVenturesLiquidatedOrSoldDuringYearAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesConsolidatedFinancialStatements",
+      "primary": "in-gaap:DisclosureOfDetailsOfSubsidiariesAbstract",
+      "hypercube": "in-gaap:DisclosureOfDetailsOfSubsidiariesTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:SubsidiariesAxis"
+      ],
+      "members": {
+        "in-gaap:SubsidiariesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesConsolidatedFinancialStatements1",
+      "primary": "in-gaap:DisclosureOfAdditionalInformationConsolidatedFinancialStatementsAbstract",
+      "hypercube": "in-gaap:DisclosureOfDetailsOfEntitiesConsolidatedTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:EntitiesConsolidatedAxis"
+      ],
+      "members": {
+        "in-gaap:EntitiesConsolidatedAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesEmployeeSharebasedPayments",
+      "primary": "in-gaap:DisclosureOfTermsAndConditionsOfEmployeeSharebasedPaymentArrangementAbstract",
+      "hypercube": "in-gaap:DisclosureOfTermsAndConditionsOfEmployeeSharebasedPaymentArrangementTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:TypesOfEmployeeSharebasedPaymentArrangementsAxis"
+      ],
+      "members": {
+        "in-gaap:TypesOfEmployeeSharebasedPaymentArrangementsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesEmployeeSharebasedPayments1",
+      "primary": "in-gaap:DisclosureOfNumberAndWeightedAverageExercisePricesOfStockOptionsAbstract",
+      "hypercube": "in-gaap:DisclosureOfNumberAndWeightedAverageExercisePricesOfStockOptionsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:GroupsOfStockOptionsAxis"
+      ],
+      "members": {
+        "in-gaap:GroupsOfStockOptionsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesEmployeeSharebasedPayments2",
+      "primary": "in-gaap:DisclosureOfNumberAndWeightedAverageRemainingContractualLifeOfOutstandingStockOptionsAbstract",
+      "hypercube": "in-gaap:DisclosureOfNumberAndWeightedAverageRemainingContractualLifeOfOutstandingStockOptionsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:RangesOfExercisePricesForOutstandingStockOptionsAxis"
+      ],
+      "members": {
+        "in-gaap:RangesOfExercisePricesForOutstandingStockOptionsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesAdditionalInformationStatementOfProfitAndLoss",
+      "primary": "in-gaap:DetailsOfRawMaterialsConsumedAbstract",
+      "hypercube": "in-gaap:DetailsOfRawMaterialsConsumedTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CategoriesOfRawMaterialsConsumedAxis"
+      ],
+      "members": {
+        "in-gaap:CategoriesOfRawMaterialsConsumedAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesAdditionalInformationStatementOfProfitAndLoss1",
+      "primary": "in-gaap:DetailsOfGoodsPurchasedAbstract",
+      "hypercube": "in-gaap:DetailsOfGoodsPurchasedTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CategoriesOfGoodsPurchasedAxis"
+      ],
+      "members": {
+        "in-gaap:CategoriesOfGoodsPurchasedAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesAdditionalInformationStatementOfProfitAndLoss2",
+      "primary": "in-gaap:DetailsOfManufacturedAndTradedGoodsAbstract",
+      "hypercube": "in-gaap:DetailsOfManufacturedAndTradedGoodsTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CategoriesOfManufacturedAndTradedGoodsAxis"
+      ],
+      "members": {
+        "in-gaap:CategoriesOfManufacturedAndTradedGoodsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesAdditionalInformationStatementOfProfitAndLoss3",
+      "primary": "in-gaap:DetailsOfWorkInProgressAbstract",
+      "hypercube": "in-gaap:DetailsOfWorkInProgressTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CategoriesOfWorkInProgressAxis"
+      ],
+      "members": {
+        "in-gaap:CategoriesOfWorkInProgressAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesAdditionalInformationStatementOfProfitAndLoss4",
+      "primary": "in-gaap:AdditionalDetailsInCaseOfTradingCompaniesAbstract",
+      "hypercube": "in-gaap:DetailsOfPurchasesAndSalesOfTradingCompaniesTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CategoriesOfTradedGoodsAxis"
+      ],
+      "members": {
+        "in-gaap:CategoriesOfTradedGoodsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesAdditionalInformationStatementOfProfitAndLoss5",
+      "primary": "in-gaap:DetailsOfRawMaterialsSparePartsAndComponentsConsumedAbstract",
+      "hypercube": "in-gaap:DetailsOfRawMaterialsSparePartsAndComponentsConsumedTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:DetailsOfRawMaterialsSparePartsAndComponentsConsumedAxis",
+        "in-gaap:SubclassificationOfRawMaterialsSparePartsAndComponentsConsumedAxis"
+      ],
+      "members": {
+        "in-gaap:DetailsOfRawMaterialsSparePartsAndComponentsConsumedAxis": [],
+        "in-gaap:SubclassificationOfRawMaterialsSparePartsAndComponentsConsumedAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesCorporateSocialResponsibility1",
+      "primary": "in-gaap:MannerInWhichAmountCSRSpentDuringFinancialYearAbstract",
+      "hypercube": "in-gaap:ClassificationOfCSRSpendingTable",
+      "targetRole": "",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfCSRSpendingAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfCSRSpendingAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesCorporateSocialResponsibility",
+      "primary": "in-ca:DisclosureOfNetProfitsForLastThreeFinancialYearsAbstract",
+      "hypercube": "in-ca:DisclosureOfNetProfitsForLastThreeFinancialYearsTable",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesCorporateSocialResponsibility",
+      "closed": "true",
+      "dims": [
+        "in-ca:NetProfitsForLastThreeFinancialYearsAxis"
+      ],
+      "members": {
+        "in-ca:NetProfitsForLastThreeFinancialYearsAxis": []
+      }
+    }
+  ],
+  "notAll": [
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital",
+      "primary": "in-gaap:TypeOfShare",
+      "hypercube": "in-gaap:DisclosureOfClassesOfShareCapitalTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfShareCapitalAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfShareCapitalAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital",
+      "primary": "in-gaap:ParValuePerShare",
+      "hypercube": "in-gaap:DisclosureOfClassesOfShareCapitalTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfShareCapitalAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfShareCapitalAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital",
+      "primary": "in-gaap:AmountPerShareCalledInCaseSharesNotFullyCalled",
+      "hypercube": "in-gaap:DisclosureOfClassesOfShareCapitalTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfShareCapitalAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfShareCapitalAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital",
+      "primary": "in-ca:NumberOfSharesIssuedAsRights",
+      "hypercube": "in-gaap:DisclosureOfClassesOfShareCapitalTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfShareCapitalAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfShareCapitalAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital",
+      "primary": "in-ca:NumberOfSharesRedeemed",
+      "hypercube": "in-gaap:DisclosureOfClassesOfShareCapitalTable2NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital2/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfShareCapitalAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfShareCapitalAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital",
+      "primary": "in-gaap:AmountOfRightsIssueDuringPeriod",
+      "hypercube": "in-gaap:DisclosureOfClassesOfShareCapitalTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfShareCapitalAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfShareCapitalAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital",
+      "primary": "in-gaap:DecreaseInAmountOfSharesRedeemed",
+      "hypercube": "in-gaap:DisclosureOfClassesOfShareCapitalTable2NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital2/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfShareCapitalAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfShareCapitalAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital1",
+      "primary": "in-gaap:TypeOfShare",
+      "hypercube": "in-gaap:DisclosureOfClassesOfShareCapitalTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfShareCapitalAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfShareCapitalAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital1",
+      "primary": "in-gaap:NameOfShareholder",
+      "hypercube": "in-gaap:DisclosureOfClassesOfShareCapitalTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfShareCapitalAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfShareCapitalAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital1",
+      "primary": "in-ca:CINOfShareholder",
+      "hypercube": "in-gaap:DisclosureOfClassesOfShareCapitalTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfShareCapitalAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfShareCapitalAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital1",
+      "primary": "in-ca:PANOfShareholder",
+      "hypercube": "in-gaap:DisclosureOfClassesOfShareCapitalTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfShareCapitalAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfShareCapitalAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital1",
+      "primary": "in-ca:CountryOfIncorporationOrResidenceOfShareholder",
+      "hypercube": "in-gaap:DisclosureOfClassesOfShareCapitalTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfShareCapitalAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfShareCapitalAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital1",
+      "primary": "in-gaap:PercentageOfShareholdingInCompany",
+      "hypercube": "in-gaap:DisclosureOfClassesOfShareCapitalTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesShareCapital/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfShareCapitalAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfShareCapitalAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus",
+      "primary": "in-ca:SecuritiesPremiumAdjustedBonusShares",
+      "hypercube": "in-gaap:StatementOfChangesInReservesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ComponentsOfReservesAxis"
+      ],
+      "members": {
+        "in-gaap:ComponentsOfReservesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus",
+      "primary": "in-ca:SecuritiesPremiumAdjustedWritingOffPreliminaryExpenses",
+      "hypercube": "in-gaap:StatementOfChangesInReservesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ComponentsOfReservesAxis"
+      ],
+      "members": {
+        "in-gaap:ComponentsOfReservesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus",
+      "primary": "in-ca:SecuritiesPremiumAdjustedWritingOffDiscountExpensesIssueSharesDebentures",
+      "hypercube": "in-gaap:StatementOfChangesInReservesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ComponentsOfReservesAxis"
+      ],
+      "members": {
+        "in-gaap:ComponentsOfReservesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus",
+      "primary": "in-ca:SecuritiesPremiumAdjustedPremiumPayableRedemptionPreferenceSharesDebentures",
+      "hypercube": "in-gaap:StatementOfChangesInReservesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ComponentsOfReservesAxis"
+      ],
+      "members": {
+        "in-gaap:ComponentsOfReservesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus",
+      "primary": "in-ca:SecuritiesPremiumAdjustedPurchaseOwnSharesOtherSecuritiesUnderSection68",
+      "hypercube": "in-gaap:StatementOfChangesInReservesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ComponentsOfReservesAxis"
+      ],
+      "members": {
+        "in-gaap:ComponentsOfReservesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus",
+      "primary": "in-gaap:InterimEquityDividendAppropriation",
+      "hypercube": "in-gaap:StatementOfChangesInReservesTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ComponentsOfReservesAxis"
+      ],
+      "members": {
+        "in-gaap:ComponentsOfReservesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus",
+      "primary": "in-gaap:InterimPreferredDividendAppropriation",
+      "hypercube": "in-gaap:StatementOfChangesInReservesTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ComponentsOfReservesAxis"
+      ],
+      "members": {
+        "in-gaap:ComponentsOfReservesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus",
+      "primary": "in-gaap:InterimSpecialDividendAppropriation",
+      "hypercube": "in-gaap:StatementOfChangesInReservesTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ComponentsOfReservesAxis"
+      ],
+      "members": {
+        "in-gaap:ComponentsOfReservesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus",
+      "primary": "in-gaap:InterimDividendAppropriation",
+      "hypercube": "in-gaap:StatementOfChangesInReservesTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ComponentsOfReservesAxis"
+      ],
+      "members": {
+        "in-gaap:ComponentsOfReservesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus",
+      "primary": "in-gaap:FinalEquityDividendAppropriation",
+      "hypercube": "in-gaap:StatementOfChangesInReservesTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ComponentsOfReservesAxis"
+      ],
+      "members": {
+        "in-gaap:ComponentsOfReservesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus",
+      "primary": "in-gaap:FinalPreferredDividendAppropriation",
+      "hypercube": "in-gaap:StatementOfChangesInReservesTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ComponentsOfReservesAxis"
+      ],
+      "members": {
+        "in-gaap:ComponentsOfReservesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus",
+      "primary": "in-gaap:FinalSpecialDividendAppropriation",
+      "hypercube": "in-gaap:StatementOfChangesInReservesTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ComponentsOfReservesAxis"
+      ],
+      "members": {
+        "in-gaap:ComponentsOfReservesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus",
+      "primary": "in-gaap:FinalDividendAppropriation",
+      "hypercube": "in-gaap:StatementOfChangesInReservesTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ComponentsOfReservesAxis"
+      ],
+      "members": {
+        "in-gaap:ComponentsOfReservesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus",
+      "primary": "in-gaap:DividendAppropriation",
+      "hypercube": "in-gaap:StatementOfChangesInReservesTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ComponentsOfReservesAxis"
+      ],
+      "members": {
+        "in-gaap:ComponentsOfReservesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus",
+      "primary": "in-gaap:EquityDividendTaxAppropriation",
+      "hypercube": "in-gaap:StatementOfChangesInReservesTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ComponentsOfReservesAxis"
+      ],
+      "members": {
+        "in-gaap:ComponentsOfReservesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus",
+      "primary": "in-gaap:PreferredDividendTaxAppropriation",
+      "hypercube": "in-gaap:StatementOfChangesInReservesTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ComponentsOfReservesAxis"
+      ],
+      "members": {
+        "in-gaap:ComponentsOfReservesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus",
+      "primary": "in-gaap:DividendTaxAppropriation",
+      "hypercube": "in-gaap:StatementOfChangesInReservesTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesReservesAndSurplus1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ComponentsOfReservesAxis"
+      ],
+      "members": {
+        "in-gaap:ComponentsOfReservesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesBorrowings",
+      "primary": "in-gaap:NatureOfSecurity",
+      "hypercube": "in-gaap:ClassificationOfBorrowingsTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesBorrowings/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationBasedOnTimePeriodAxis",
+        "in-gaap:ClassificationOfBorrowingsAxis",
+        "in-gaap:SubclassificationOfBorrowingsAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationBasedOnTimePeriodAxis": [],
+        "in-gaap:ClassificationOfBorrowingsAxis": [],
+        "in-gaap:SubclassificationOfBorrowingsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesBorrowings",
+      "primary": "in-gaap:DetailsOfPersonalSecurityGivenByPromotersOtherShareholdersOrOtherThirdPartiesThoughSuchSecurityDoesNotResultInClassificationOfBorrowingsAsSecured",
+      "hypercube": "in-gaap:ClassificationOfBorrowingsTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesBorrowings/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationBasedOnTimePeriodAxis",
+        "in-gaap:ClassificationOfBorrowingsAxis",
+        "in-gaap:SubclassificationOfBorrowingsAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationBasedOnTimePeriodAxis": [],
+        "in-gaap:ClassificationOfBorrowingsAxis": [],
+        "in-gaap:SubclassificationOfBorrowingsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesBorrowings",
+      "primary": "in-gaap:AggregateAmountOfLoansGuaranteedByDirectors",
+      "hypercube": "in-gaap:ClassificationOfBorrowingsTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesBorrowings1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfBorrowingsAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfBorrowingsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesBorrowings",
+      "primary": "in-gaap:AggregateAmountOfLoansGuaranteedByOthers",
+      "hypercube": "in-gaap:ClassificationOfBorrowingsTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesBorrowings1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfBorrowingsAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfBorrowingsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesBorrowings",
+      "primary": "in-gaap:ParticularsOfAnyRedeemedBondsDebenturesWhichCompanyHasPowerToReissue",
+      "hypercube": "in-gaap:ClassificationOfBorrowingsTable2NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesBorrowings2/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationBasedOnTimePeriodAxis",
+        "in-gaap:ClassificationOfBorrowingsAxis",
+        "in-gaap:SubclassificationOfBorrowingsAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationBasedOnTimePeriodAxis": [],
+        "in-gaap:ClassificationOfBorrowingsAxis": [],
+        "in-gaap:SubclassificationOfBorrowingsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets4",
+      "primary": "in-gaap:LongTermTradeReceivablesDueByDirectors",
+      "hypercube": "in-gaap:ClassificationOfLongTermTradeReceivablesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets3/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets4",
+      "primary": "in-gaap:LongTermTradeReceivablesDueByOtherOfficers",
+      "hypercube": "in-gaap:ClassificationOfLongTermTradeReceivablesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets3/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets4",
+      "primary": "in-gaap:LongTermTradeReceivablesDueByOthers",
+      "hypercube": "in-gaap:ClassificationOfLongTermTradeReceivablesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets3/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets4",
+      "primary": "in-gaap:LongTermTradeReceivablesDueByDirectorsOtherOfficersOrOthers",
+      "hypercube": "in-gaap:ClassificationOfLongTermTradeReceivablesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets3/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets4",
+      "primary": "in-gaap:LongTermTradeReceivablesDueByFirmsInWhichAnyDirectorIsPartner",
+      "hypercube": "in-gaap:ClassificationOfLongTermTradeReceivablesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets3/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets4",
+      "primary": "in-gaap:LongTermTradeReceivablesDueByPrivateCompaniesInWhichAnyDirectorIsDirector",
+      "hypercube": "in-gaap:ClassificationOfLongTermTradeReceivablesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets3/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets4",
+      "primary": "in-gaap:LongTermTradeReceivablesDueByPrivateCompaniesInWhichAnyDirectorIsMember",
+      "hypercube": "in-gaap:ClassificationOfLongTermTradeReceivablesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets3/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets4",
+      "primary": "in-gaap:LongTermTradeReceivablesDueByFirmsOrCompaniesInWhichAnyDirectorIsPartnerOrDirector",
+      "hypercube": "in-gaap:ClassificationOfLongTermTradeReceivablesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets3/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets5",
+      "primary": "in-gaap:NatureOfOtherInventories",
+      "hypercube": "in-gaap:ClassificationOfInventoriesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfInventoriesAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfInventoriesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets5",
+      "primary": "in-gaap:NumberOfCertifiedEmissionRightsHeldAsInventory",
+      "hypercube": "in-gaap:ClassificationOfInventoriesTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfInventoriesAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfInventoriesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets5",
+      "primary": "in-gaap:NumberOfCertifiedEmissionRightsUnderCertification",
+      "hypercube": "in-gaap:ClassificationOfInventoriesTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfInventoriesAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfInventoriesAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets6",
+      "primary": "in-gaap:TradeReceivablesDueByDirectors",
+      "hypercube": "in-gaap:SubclassificationOfTradeReceivablesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets2/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets6",
+      "primary": "in-gaap:TradeReceivablesDueByOtherOfficers",
+      "hypercube": "in-gaap:SubclassificationOfTradeReceivablesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets2/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets6",
+      "primary": "in-gaap:TradeReceivablesDueByOthers",
+      "hypercube": "in-gaap:SubclassificationOfTradeReceivablesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets2/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets6",
+      "primary": "in-gaap:TradeReceivablesDueByDirectorsOtherOfficersOrOthers",
+      "hypercube": "in-gaap:SubclassificationOfTradeReceivablesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets2/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets6",
+      "primary": "in-gaap:TradeReceivablesDueByFirmsInWhichAnyDirectorIsPartner",
+      "hypercube": "in-gaap:SubclassificationOfTradeReceivablesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets2/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets6",
+      "primary": "in-gaap:TradeReceivablesDueByPrivateCompaniesInWhichAnyDirectorIsDirector",
+      "hypercube": "in-gaap:SubclassificationOfTradeReceivablesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets2/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets6",
+      "primary": "in-gaap:TradeReceivablesDueByPrivateCompaniesInWhichAnyDirectorIsMember",
+      "hypercube": "in-gaap:SubclassificationOfTradeReceivablesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets2/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets6",
+      "primary": "in-gaap:TradeReceivablesDueByFirmsOrCompaniesInWhichAnyDirectorIsPartnerOrDirector",
+      "hypercube": "in-gaap:SubclassificationOfTradeReceivablesTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesSubclassificationAndNotesOnLiabilitiesAndAssets2/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis"
+      ],
+      "members": {
+        "in-gaap:ClassificationOfAssetsBasedOnSecurityAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesTangibleAssets",
+      "primary": "in-gaap:NatureOfOtherTangibleAssets",
+      "hypercube": "in-gaap:DisclosureOfTangibleAssetsTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesTangibleAssets/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfTangibleAssetsAxis",
+        "in-gaap:SubClassesOfTangibleAssetsAxis",
+        "in-gaap:CarryingAmountAccumulatedDepreciationAndGrossCarryingAmountAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfTangibleAssetsAxis": [],
+        "in-gaap:SubClassesOfTangibleAssetsAxis": [],
+        "in-gaap:CarryingAmountAccumulatedDepreciationAndGrossCarryingAmountAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesTangibleAssets",
+      "primary": "in-gaap:AdditionsOtherThanThroughBusinessCombinationsTangibleAssets",
+      "hypercube": "in-gaap:DisclosureOfTangibleAssetsTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesTangibleAssets1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CarryingAmountAccumulatedDepreciationAndGrossCarryingAmountAxis"
+      ],
+      "members": {
+        "in-gaap:CarryingAmountAccumulatedDepreciationAndGrossCarryingAmountAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesTangibleAssets",
+      "primary": "in-gaap:AcquisitionsThroughBusinessCombinationsTangibleAssets",
+      "hypercube": "in-gaap:DisclosureOfTangibleAssetsTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesTangibleAssets1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CarryingAmountAccumulatedDepreciationAndGrossCarryingAmountAxis"
+      ],
+      "members": {
+        "in-gaap:CarryingAmountAccumulatedDepreciationAndGrossCarryingAmountAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesTangibleAssets",
+      "primary": "in-gaap:DepreciationTangibleAssets",
+      "hypercube": "in-gaap:DisclosureOfTangibleAssetsTable2NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesTangibleAssets2/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CarryingAmountAccumulatedDepreciationAndGrossCarryingAmountAxis"
+      ],
+      "members": {
+        "in-gaap:CarryingAmountAccumulatedDepreciationAndGrossCarryingAmountAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesTangibleAssets",
+      "primary": "in-gaap:ImpairmentLossRecognisedInProfitOrLossTangibleAssets",
+      "hypercube": "in-gaap:DisclosureOfTangibleAssetsTable2NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesTangibleAssets2/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CarryingAmountAccumulatedDepreciationAndGrossCarryingAmountAxis"
+      ],
+      "members": {
+        "in-gaap:CarryingAmountAccumulatedDepreciationAndGrossCarryingAmountAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesTangibleAssets",
+      "primary": "in-gaap:ReversalOfImpairmentLossRecognisedInProfitOrLossTangibleAssets",
+      "hypercube": "in-gaap:DisclosureOfTangibleAssetsTable2NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesTangibleAssets2/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CarryingAmountAccumulatedDepreciationAndGrossCarryingAmountAxis"
+      ],
+      "members": {
+        "in-gaap:CarryingAmountAccumulatedDepreciationAndGrossCarryingAmountAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesTangibleAssets",
+      "primary": "in-gaap:RevaluationIncreaseDecreaseTangibleAssets",
+      "hypercube": "in-gaap:DisclosureOfTangibleAssetsTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesTangibleAssets1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CarryingAmountAccumulatedDepreciationAndGrossCarryingAmountAxis"
+      ],
+      "members": {
+        "in-gaap:CarryingAmountAccumulatedDepreciationAndGrossCarryingAmountAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesTangibleAssets",
+      "primary": "in-gaap:IncreaseDecreaseThroughNetExchangeDifferencesTangibleAssets",
+      "hypercube": "in-gaap:DisclosureOfTangibleAssetsTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesTangibleAssets1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CarryingAmountAccumulatedDepreciationAndGrossCarryingAmountAxis"
+      ],
+      "members": {
+        "in-gaap:CarryingAmountAccumulatedDepreciationAndGrossCarryingAmountAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets",
+      "primary": "in-gaap:NatureOfOtherIntangibleAssets",
+      "hypercube": "in-gaap:DisclosureOfIntangibleAssetsTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfIntangibleAssetsAxis",
+        "in-gaap:SubClassesOfIntangibleAssetsAxis",
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfIntangibleAssetsAxis": [],
+        "in-gaap:SubClassesOfIntangibleAssetsAxis": [],
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets",
+      "primary": "in-gaap:AdditionsThroughInternalDevelopment",
+      "hypercube": "in-gaap:DisclosureOfIntangibleAssetsTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis"
+      ],
+      "members": {
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets",
+      "primary": "in-gaap:AdditionsOtherThanThroughBusinessCombinationsIntangibleAssets",
+      "hypercube": "in-gaap:DisclosureOfIntangibleAssetsTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis"
+      ],
+      "members": {
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets",
+      "primary": "in-gaap:AcquisitionsThroughBusinessCombinationsIntangibleAssets",
+      "hypercube": "in-gaap:DisclosureOfIntangibleAssetsTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis"
+      ],
+      "members": {
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets",
+      "primary": "in-gaap:AdditionsToIntangibleAssets",
+      "hypercube": "in-gaap:DisclosureOfIntangibleAssetsTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis"
+      ],
+      "members": {
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets",
+      "primary": "in-gaap:AmortizationIntangibleAssets",
+      "hypercube": "in-gaap:DisclosureOfIntangibleAssetsTable2NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets2/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis"
+      ],
+      "members": {
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets",
+      "primary": "in-gaap:ImpairmentLossRecognisedInProfitOrLossIntangibleAssets",
+      "hypercube": "in-gaap:DisclosureOfIntangibleAssetsTable2NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets2/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis"
+      ],
+      "members": {
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets",
+      "primary": "in-gaap:ReversalOfImpairmentLossRecognisedInProfitOrLossIntangibleAssets",
+      "hypercube": "in-gaap:DisclosureOfIntangibleAssetsTable2NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets2/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis"
+      ],
+      "members": {
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets",
+      "primary": "in-gaap:RevaluationIncreaseDecreaseIntangibleAssets",
+      "hypercube": "in-gaap:DisclosureOfIntangibleAssetsTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis"
+      ],
+      "members": {
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets",
+      "primary": "in-gaap:IncreaseDecreaseThroughNetExchangeDifferencesIntangibleAssets",
+      "hypercube": "in-gaap:DisclosureOfIntangibleAssetsTable1NotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesIntangibleAssets1/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis"
+      ],
+      "members": {
+        "in-gaap:CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesImpairment",
+      "primary": "in-gaap:LineItemInStatementOfProfitOrLossWhereImpairmentLossIsRecognised",
+      "hypercube": "in-gaap:DisclosureOfImpairmentLossAndReversalOfImpairmentLossTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesImpairment/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfAssetsAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfAssetsAxis": []
+      }
+    },
+    {
+      "role": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesImpairment",
+      "primary": "in-gaap:LineItemInStatementOfProfitOrLossWhereReversalOfImpairmentLossIsRecognised",
+      "hypercube": "in-gaap:DisclosureOfImpairmentLossAndReversalOfImpairmentLossTableNotAll",
+      "targetRole": "http://www.icai.org/xbrl/taxonomy/role/in-gaap/NotesImpairment/not-all",
+      "closed": "true",
+      "dims": [
+        "in-gaap:ClassesOfAssetsAxis"
+      ],
+      "members": {
+        "in-gaap:ClassesOfAssetsAxis": []
+      }
+    }
+  ],
+  "dimensionDefaults": {
+    "in-ca_NetProfitsForLastThreeFinancialYearsAxis": "in-ca_FinancialYearMember",
+    "in-gaap_ClassesOfShareCapitalAxis": "in-gaap_ShareCapitalMember",
+    "in-gaap_NameOfShareholderAxis": "in-gaap_NameOfShareholderMember",
+    "in-gaap_ComponentsOfReservesAxis": "in-gaap_ReservesMember",
+    "in-gaap_ClassificationBasedOnTimePeriodAxis": "in-gaap_ClassificationBasedOnTimePeriodMember",
+    "in-gaap_ClassificationOfBorrowingsAxis": "in-gaap_BorrowingsMember",
+    "in-gaap_SubclassificationOfBorrowingsAxis": "in-gaap_SecuredUnsecuredBorrowingsMember",
+    "in-gaap_DetailsOfProducingPropertiesAxis": "in-gaap_CarryingAmountOfProducingPropertiesMember",
+    "in-gaap_ClassesOfPreproducingPropertiesAxis": "in-gaap_CompanyTotalOfPreproducingPropertiesMember",
+    "in-gaap_DetailsOfPreproducingPropertiesAxis": "in-gaap_CarryingAmountOfPreproducingPropertiesMember",
+    "in-gaap_ClassificationOfLoansAndAdvancesAxis": "in-gaap_LoansAndAdvancesMember",
+    "in-gaap_ClassificationOfAssetsBasedOnSecurityAxis": "in-gaap_ClassificationOfAssetsBasedOnSecurityMember",
+    "in-gaap_ClassificationOfInventoriesAxis": "in-gaap_CompanyTotalInventoriesMember",
+    "in-ca_ShareholdingPatternOfPromotersAndPublicAxis": "in-ca_ShareholdingPatternOfPromotersAndPublicMember",
+    "in-ca_ClassificationBasedOnNationalityOrOriginAxis": "in-ca_ClassificationBasedOnNationalityOrOriginMember",
+    "in-gaap_ClassesOfTangibleAssetsAxis": "in-gaap_CompanyTotalTangibleAssetsMember",
+    "in-gaap_SubClassesOfTangibleAssetsAxis": "in-gaap_OwnedAndLeasedAssetsMember",
+    "in-gaap_CarryingAmountAccumulatedDepreciationAndGrossCarryingAmountAxis": "in-gaap_CarryingAmountMember",
+    "in-gaap_ClassesOfIntangibleAssetsAxis": "in-gaap_CompanyTotalIntangibleAssetsMember",
+    "in-gaap_SubClassesOfIntangibleAssetsAxis": "in-gaap_InternallyGeneratedAndOtherThanInternallyGeneratedIntangibleAssetsMember",
+    "in-gaap_CarryingAmountAccumulatedAmortizationAndImpairmentAndGrossCarryingAmountAxis": "in-gaap_CarryingAmountMember",
+    "in-gaap_MaterialIndividualIntangibleAssetsAxis": "in-gaap_MaterialIndividualIntangibleAssetsMember",
+    "in-gaap_DefinedBenefitPlansAxis": "in-gaap_DefinedBenefitPlansMember",
+    "in-gaap_EnterprisesPrimaryReportableSegmentsAxis": "in-gaap_EnterprisesPrimaryReportableSegmentsMember",
+    "in-gaap_EnterprisesSecondaryReportableSegmentsAxis": "in-gaap_EnterprisesSecondaryReportableSegmentsMember",
+    "in-gaap_MaturityAxis": "in-gaap_AggregatedTimeBandsMember",
+    "in-gaap_ClassesOfAssetsAxis": "in-gaap_ClassesOfAssetsMember",
+    "in-gaap_PrimaryReportableSegmentsAxis": "in-gaap_PrimaryReportableSegmentsMember",
+    "in-gaap_IndividualAssetsOrCashGeneratingUnitsAxis": "in-gaap_TotalForIndividualAssetsOrCashGeneratingUnitsMember",
+    "in-gaap_ClassesOfOtherProvisionsAxis": "in-gaap_CompanyTotalOtherProvisionsMember",
+    "in-gaap_ClassesOfContingentLiabilitiesAxis": "in-gaap_CompanyTotalContingentLiabilitiesMember",
+    "in-gaap_GroupsOfStockOptionsAxis": "in-gaap_StockOptionsMember",
+    "in-gaap_CategoriesOfRawMaterialsConsumedAxis": "in-gaap_RawMaterialsConsumedMember",
+    "in-gaap_CategoriesOfGoodsPurchasedAxis": "in-gaap_GoodsPurchasedMember",
+    "in-gaap_CategoriesOfManufacturedAndTradedGoodsAxis": "in-gaap_ManufacturedAndTradedGoodsMember",
+    "in-gaap_CategoriesOfWorkInProgressAxis": "in-gaap_WorkInProgressMember",
+    "in-gaap_CategoriesOfTradedGoodsAxis": "in-gaap_TradedGoodsMember",
+    "in-gaap_DetailsOfRawMaterialsSparePartsAndComponentsConsumedAxis": "in-gaap_RawMaterialsSparePartsAndComponentsConsumedMember",
+    "in-gaap_SubclassificationOfRawMaterialsSparePartsAndComponentsConsumedAxis": "in-gaap_ImportedAndIndigenousMember",
+    "in-ca_AuditorsQualificationsReservationsOrAdverseRemarksInAuditorsReportAxis": "in-ca_AuditorsRemarkMember",
+    "in-ca_PrincipalBusinessActivitiesOfCompanyAxis": "in-ca_ProductOrServiceMember",
+    "in-ca_ShareholdingPatternAxis": "in-ca_ShareholdersMember",
+    "in-ca_ChangeInShareholdingAxis": "in-ca_ShareholdingMember",
+    "in-ca_NameOfTop10ShareholderAxis": "in-ca_NameOfTop10ShareholderMember",
+    "in-ca_IndebtednessAxis": "in-ca_IndebtednessMember"
+  }
+}

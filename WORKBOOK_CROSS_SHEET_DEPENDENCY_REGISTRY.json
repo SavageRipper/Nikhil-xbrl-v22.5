@@ -1,0 +1,1048 @@
+{
+  "generatedFrom": "charvak XBRL 31-3-26.xlsx",
+  "count": 93,
+  "dependencies": [
+    {
+      "targetSheet": "Macro_Warning",
+      "targetCell": "A1",
+      "formula": "=\"CompuXBRL (2016) Excel Template (version \"&Main!A1&\".0)\"",
+      "sources": [
+        {
+          "sheet": "Main",
+          "ref": "A1"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "L6",
+      "formula": "=SUM(ClassesOfShareCapitalTable!AK12:AK2000)",
+      "sources": [
+        {
+          "sheet": "ClassesOfShareCapitalTable",
+          "ref": "AK12:AK2000"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "M6",
+      "formula": "=SUM(ClassesOfShareCapitalTablePY!AK12:AK2000)",
+      "sources": [
+        {
+          "sheet": "ClassesOfShareCapitalTablePY",
+          "ref": "AK12:AK2000"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "L7",
+      "formula": "=SUM(ChangesInReserves!AU12:AU2000)",
+      "sources": [
+        {
+          "sheet": "ChangesInReserves",
+          "ref": "AU12:AU2000"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "M7",
+      "formula": "=SUM(ChangesInReservesPY!AU12:AU2000)",
+      "sources": [
+        {
+          "sheet": "ChangesInReservesPY",
+          "ref": "AU12:AU2000"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "L15",
+      "formula": "=IF((IncomeTaxes!L26-IncomeTaxes!L16)>0,IncomeTaxes!L26-IncomeTaxes!L16,0)",
+      "sources": [
+        {
+          "sheet": "IncomeTaxes",
+          "ref": "L26"
+        },
+        {
+          "sheet": "IncomeTaxes",
+          "ref": "L16"
+        },
+        {
+          "sheet": "IncomeTaxes",
+          "ref": "L26"
+        },
+        {
+          "sheet": "IncomeTaxes",
+          "ref": "L16"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "M15",
+      "formula": "=IF((IncomeTaxes!M26-IncomeTaxes!M16)>0,IncomeTaxes!M26-IncomeTaxes!M16,0)",
+      "sources": [
+        {
+          "sheet": "IncomeTaxes",
+          "ref": "M26"
+        },
+        {
+          "sheet": "IncomeTaxes",
+          "ref": "M16"
+        },
+        {
+          "sheet": "IncomeTaxes",
+          "ref": "M26"
+        },
+        {
+          "sheet": "IncomeTaxes",
+          "ref": "M16"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "L17",
+      "formula": "=SubclsifictionLiabilitisAssets!L13",
+      "sources": [
+        {
+          "sheet": "SubclsifictionLiabilitisAssets",
+          "ref": "L13"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "M17",
+      "formula": "=SubclsifictionLiabilitisAssets!M13",
+      "sources": [
+        {
+          "sheet": "SubclsifictionLiabilitisAssets",
+          "ref": "M13"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "L18",
+      "formula": "=BreakupOfProvisions!AQ12",
+      "sources": [
+        {
+          "sheet": "BreakupOfProvisions",
+          "ref": "AQ12"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "M18",
+      "formula": "=BreakupOfProvisionsPY!AQ12",
+      "sources": [
+        {
+          "sheet": "BreakupOfProvisionsPY",
+          "ref": "AQ12"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "L23",
+      "formula": "=SubclsifictionLiabilitisAssets!L69",
+      "sources": [
+        {
+          "sheet": "SubclsifictionLiabilitisAssets",
+          "ref": "L69"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "M23",
+      "formula": "=SubclsifictionLiabilitisAssets!M69",
+      "sources": [
+        {
+          "sheet": "SubclsifictionLiabilitisAssets",
+          "ref": "M69"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "L24",
+      "formula": "=BreakupOfProvisions!AQ13",
+      "sources": [
+        {
+          "sheet": "BreakupOfProvisions",
+          "ref": "AQ13"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "M24",
+      "formula": "=BreakupOfProvisionsPY!AQ13",
+      "sources": [
+        {
+          "sheet": "BreakupOfProvisionsPY",
+          "ref": "AQ13"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "L30",
+      "formula": "=SUM(DisclosrTangibleAssets!BO12:BO61)",
+      "sources": [
+        {
+          "sheet": "DisclosrTangibleAssets",
+          "ref": "BO12:BO61"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "M30",
+      "formula": "=SUM(DisclosrTangibleAssets!BN12:BN61)",
+      "sources": [
+        {
+          "sheet": "DisclosrTangibleAssets",
+          "ref": "BN12:BN61"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "L31",
+      "formula": "=SUM(DetailsOfProducingProperties!S12:S2000)",
+      "sources": [
+        {
+          "sheet": "DetailsOfProducingProperties",
+          "ref": "S12:S2000"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "M31",
+      "formula": "=SUM(DetailsOfProducingPropertiesPY!S12:S2000)",
+      "sources": [
+        {
+          "sheet": "DetailsOfProducingPropertiesPY",
+          "ref": "S12:S2000"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "L32",
+      "formula": "=SUM(DisclosrIntangibleAssets!BW12:BW61)",
+      "sources": [
+        {
+          "sheet": "DisclosrIntangibleAssets",
+          "ref": "BW12:BW61"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "M32",
+      "formula": "=SUM(DisclosrIntangibleAssets!BV12:BV61)",
+      "sources": [
+        {
+          "sheet": "DisclosrIntangibleAssets",
+          "ref": "BV12:BV61"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "L33",
+      "formula": "=SUM(DetailsPreproducingProprties!V12:V2000)",
+      "sources": [
+        {
+          "sheet": "DetailsPreproducingProprties",
+          "ref": "V12:V2000"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "M33",
+      "formula": "=SUM(DetailsPreproducingProprtiesPY!V12:V2000)",
+      "sources": [
+        {
+          "sheet": "DetailsPreproducingProprtiesPY",
+          "ref": "V12:V2000"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "L37",
+      "formula": "=SUM(DetailsOfNoncurentInvstmnts!P12:P2000)",
+      "sources": [
+        {
+          "sheet": "DetailsOfNoncurentInvstmnts",
+          "ref": "P12:P2000"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "M37",
+      "formula": "=SUM(DetailsOfNoncurentInvstmntsPY!P12:P2000)",
+      "sources": [
+        {
+          "sheet": "DetailsOfNoncurentInvstmntsPY",
+          "ref": "P12:P2000"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "L38",
+      "formula": "=IF((IncomeTaxes!L16-IncomeTaxes!L26)>0,IncomeTaxes!L16-IncomeTaxes!L26,0)",
+      "sources": [
+        {
+          "sheet": "IncomeTaxes",
+          "ref": "L16"
+        },
+        {
+          "sheet": "IncomeTaxes",
+          "ref": "L26"
+        },
+        {
+          "sheet": "IncomeTaxes",
+          "ref": "L16"
+        },
+        {
+          "sheet": "IncomeTaxes",
+          "ref": "L26"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "M38",
+      "formula": "=IF((IncomeTaxes!M16-IncomeTaxes!M26)>0,IncomeTaxes!M16-IncomeTaxes!M26,0)",
+      "sources": [
+        {
+          "sheet": "IncomeTaxes",
+          "ref": "M16"
+        },
+        {
+          "sheet": "IncomeTaxes",
+          "ref": "M26"
+        },
+        {
+          "sheet": "IncomeTaxes",
+          "ref": "M16"
+        },
+        {
+          "sheet": "IncomeTaxes",
+          "ref": "M26"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "L41",
+      "formula": "=SubclsifictionLiabilitisAssets!L101",
+      "sources": [
+        {
+          "sheet": "SubclsifictionLiabilitisAssets",
+          "ref": "L101"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "M41",
+      "formula": "=SubclsifictionLiabilitisAssets!M101",
+      "sources": [
+        {
+          "sheet": "SubclsifictionLiabilitisAssets",
+          "ref": "M101"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "L44",
+      "formula": "=SUM(DetailsOfCurentInvstments!P12:P2000)",
+      "sources": [
+        {
+          "sheet": "DetailsOfCurentInvstments",
+          "ref": "P12:P2000"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "M44",
+      "formula": "=SUM(DetailsOfCurentInvstmentsPY!P12:P2000)",
+      "sources": [
+        {
+          "sheet": "DetailsOfCurentInvstmentsPY",
+          "ref": "P12:P2000"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "L45",
+      "formula": "=SUM(Inventories!N12:N2000)",
+      "sources": [
+        {
+          "sheet": "Inventories",
+          "ref": "N12:N2000"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "M45",
+      "formula": "=SUM(InventoriesPY!N12:N2000)",
+      "sources": [
+        {
+          "sheet": "InventoriesPY",
+          "ref": "N12:N2000"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "L46",
+      "formula": "=SUM(TradeReceivables!P12:P2000)",
+      "sources": [
+        {
+          "sheet": "TradeReceivables",
+          "ref": "P12:P2000"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "M46",
+      "formula": "=SUM(TradeReceivablesPY!P12:P2000)",
+      "sources": [
+        {
+          "sheet": "TradeReceivablesPY",
+          "ref": "P12:P2000"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "L47",
+      "formula": "=SubclsifictionLiabilitisAssets!L135",
+      "sources": [
+        {
+          "sheet": "SubclsifictionLiabilitisAssets",
+          "ref": "L135"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "M47",
+      "formula": "=SubclsifictionLiabilitisAssets!M135",
+      "sources": [
+        {
+          "sheet": "SubclsifictionLiabilitisAssets",
+          "ref": "M135"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "L49",
+      "formula": "=SubclsifictionLiabilitisAssets!L166",
+      "sources": [
+        {
+          "sheet": "SubclsifictionLiabilitisAssets",
+          "ref": "L166"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "BalanceSheet",
+      "targetCell": "M49",
+      "formula": "=SubclsifictionLiabilitisAssets!M166",
+      "sources": [
+        {
+          "sheet": "SubclsifictionLiabilitisAssets",
+          "ref": "M166"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "L6",
+      "formula": "='SubclsfictionOnIncome&Expenses'!L11",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "M6",
+      "formula": "='SubclsfictionOnIncome&Expenses'!M11",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "L7",
+      "formula": "='SubclsfictionOnIncome&Expenses'!L19",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "M7",
+      "formula": "='SubclsfictionOnIncome&Expenses'!M19",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "L8",
+      "formula": "='SubclsfictionOnIncome&Expenses'!L25",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "M8",
+      "formula": "='SubclsfictionOnIncome&Expenses'!M25",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "L18",
+      "formula": "='SubclsfictionOnIncome&Expenses'!L89",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "M18",
+      "formula": "='SubclsfictionOnIncome&Expenses'!M89",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "L21",
+      "formula": "=SUM(RawMaterialsConsumed!N12:N2000)",
+      "sources": [
+        {
+          "sheet": "RawMaterialsConsumed",
+          "ref": "N12:N2000"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "M21",
+      "formula": "=SUM(RawMaterialsConsumedPY!N12:N2000)",
+      "sources": [
+        {
+          "sheet": "RawMaterialsConsumedPY",
+          "ref": "N12:N2000"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "L22",
+      "formula": "=SUM(GoodsPurchased!N12:N2000)+SUM(PurchSalesOfTradingCompnies!N12:N2000)",
+      "sources": [
+        {
+          "sheet": "GoodsPurchased",
+          "ref": "N12:N2000"
+        },
+        {
+          "sheet": "PurchSalesOfTradingCompnies",
+          "ref": "N12:N2000"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "M22",
+      "formula": "=SUM(GoodsPurchasedPY!N12:N2000)+SUM(PurchSalesOfTradingCompniesPY!N12:N2000)",
+      "sources": [
+        {
+          "sheet": "GoodsPurchasedPY",
+          "ref": "N12:N2000"
+        },
+        {
+          "sheet": "PurchSalesOfTradingCompniesPY",
+          "ref": "N12:N2000"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "L23",
+      "formula": "='AddinlInformtionStatementOfP&L'!L15",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "M23",
+      "formula": "='AddinlInformtionStatementOfP&L'!M15",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "L24",
+      "formula": "='SubclsfictionOnIncome&Expenses'!L142",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "M24",
+      "formula": "='SubclsfictionOnIncome&Expenses'!M142",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "L25",
+      "formula": "='SubclsfictionOnIncome&Expenses'!L112",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "M25",
+      "formula": "='SubclsfictionOnIncome&Expenses'!M112",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "L27",
+      "formula": "=SUM(DisclosrTangibleAssets!BD12:BD61)+SUM(DisclosrTangibleAssets!BE12:BE61)-SUM(DisclosrTangibleAssets!BF12:BF61)",
+      "sources": [
+        {
+          "sheet": "DisclosrTangibleAssets",
+          "ref": "BD12:BD61"
+        },
+        {
+          "sheet": "DisclosrTangibleAssets",
+          "ref": "BE12:BE61"
+        },
+        {
+          "sheet": "DisclosrTangibleAssets",
+          "ref": "BF12:BF61"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "M27",
+      "formula": "=SUM(DisclosrTangibleAssets!AR12:AR61)+SUM(DisclosrTangibleAssets!AS12:AS61)-SUM(DisclosrTangibleAssets!AT12:AT61)",
+      "sources": [
+        {
+          "sheet": "DisclosrTangibleAssets",
+          "ref": "AR12:AR61"
+        },
+        {
+          "sheet": "DisclosrTangibleAssets",
+          "ref": "AS12:AS61"
+        },
+        {
+          "sheet": "DisclosrTangibleAssets",
+          "ref": "AT12:AT61"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "L28",
+      "formula": "=SUM(DisclosrIntangibleAssets!BK12:BK61)+SUM(DisclosrIntangibleAssets!BL12:BL61)-SUM(DisclosrIntangibleAssets!BM12:BM61)",
+      "sources": [
+        {
+          "sheet": "DisclosrIntangibleAssets",
+          "ref": "BK12:BK61"
+        },
+        {
+          "sheet": "DisclosrIntangibleAssets",
+          "ref": "BL12:BL61"
+        },
+        {
+          "sheet": "DisclosrIntangibleAssets",
+          "ref": "BM12:BM61"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "M28",
+      "formula": "=SUM(DisclosrIntangibleAssets!AX12:AX61)+SUM(DisclosrIntangibleAssets!AY12:AY61)-SUM(DisclosrIntangibleAssets!AZ12:AZ61)",
+      "sources": [
+        {
+          "sheet": "DisclosrIntangibleAssets",
+          "ref": "AX12:AX61"
+        },
+        {
+          "sheet": "DisclosrIntangibleAssets",
+          "ref": "AY12:AY61"
+        },
+        {
+          "sheet": "DisclosrIntangibleAssets",
+          "ref": "AZ12:AZ61"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "L29",
+      "formula": "=SUM(DetailsOfProducingProperties!P12:P100)+SUM(DetailsPreproducingProprties!R12:R100)",
+      "sources": [
+        {
+          "sheet": "DetailsOfProducingProperties",
+          "ref": "P12:P100"
+        },
+        {
+          "sheet": "DetailsPreproducingProprties",
+          "ref": "R12:R100"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "M29",
+      "formula": "=SUM(DetailsOfProducingPropertiesPY!P12:P100)+SUM(DetailsPreproducingProprtiesPY!R12:R100)",
+      "sources": [
+        {
+          "sheet": "DetailsOfProducingPropertiesPY",
+          "ref": "P12:P100"
+        },
+        {
+          "sheet": "DetailsPreproducingProprtiesPY",
+          "ref": "R12:R100"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "L31",
+      "formula": "='SubclsfictionOnIncome&Expenses'!L281",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "M31",
+      "formula": "='SubclsfictionOnIncome&Expenses'!M281",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "L33",
+      "formula": "='SubclsfictionOnIncome&Expenses'!L268",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "M33",
+      "formula": "='SubclsfictionOnIncome&Expenses'!M268",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "L36",
+      "formula": "='AddinlInformtionStatementOfP&L'!L35",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "M36",
+      "formula": "='AddinlInformtionStatementOfP&L'!M35",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "L37",
+      "formula": "='AddinlInformtionStatementOfP&L'!L19",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "M37",
+      "formula": "='AddinlInformtionStatementOfP&L'!M19",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "L39",
+      "formula": "='AddinlInformtionStatementOfP&L'!L26",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "M39",
+      "formula": "='AddinlInformtionStatementOfP&L'!M26",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "L42",
+      "formula": "='SubclsfictionOnIncome&Expenses'!L286",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "Profit&Loss",
+      "targetCell": "M42",
+      "formula": "='SubclsfictionOnIncome&Expenses'!M286",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "CashFlowIndirect",
+      "targetCell": "L6",
+      "formula": "='Profit&Loss'!L38",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "CashFlowIndirect",
+      "targetCell": "M6",
+      "formula": "='Profit&Loss'!M38",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "CashFlowIndirect",
+      "targetCell": "L84",
+      "formula": "=SubclsifictionLiabilitisAssets!L135",
+      "sources": [
+        {
+          "sheet": "SubclsifictionLiabilitisAssets",
+          "ref": "L135"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "CashFlowIndirect",
+      "targetCell": "M84",
+      "formula": "=SubclsifictionLiabilitisAssets!M135",
+      "sources": [
+        {
+          "sheet": "SubclsifictionLiabilitisAssets",
+          "ref": "M135"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "ClassesOfShareCapitalTable",
+      "targetCell": "CU12",
+      "formula": "=SubclsifictionLiabilitisAssets!L34",
+      "sources": [
+        {
+          "sheet": "SubclsifictionLiabilitisAssets",
+          "ref": "L34"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "ClassesOfShareCapitalTable",
+      "targetCell": "CV12",
+      "formula": "=SubclsifictionLiabilitisAssets!L35",
+      "sources": [
+        {
+          "sheet": "SubclsifictionLiabilitisAssets",
+          "ref": "L35"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "ClassesOfShareCapitalTablePY",
+      "targetCell": "CU12",
+      "formula": "=SubclsifictionLiabilitisAssets!M34",
+      "sources": [
+        {
+          "sheet": "SubclsifictionLiabilitisAssets",
+          "ref": "M34"
+        }
+      ],
+      "year": "prior"
+    },
+    {
+      "targetSheet": "ClassesOfShareCapitalTablePY",
+      "targetCell": "CV12",
+      "formula": "=SubclsifictionLiabilitisAssets!M35",
+      "sources": [
+        {
+          "sheet": "SubclsifictionLiabilitisAssets",
+          "ref": "M35"
+        }
+      ],
+      "year": "prior"
+    },
+    {
+      "targetSheet": "SubclsifictionLiabilitisAssets",
+      "targetCell": "L101",
+      "formula": "=SUM(L99:L100)+SUM(LongTermTradeReceivables!P12:P100)",
+      "sources": [
+        {
+          "sheet": "LongTermTradeReceivables",
+          "ref": "P12:P100"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "SubclsifictionLiabilitisAssets",
+      "targetCell": "M101",
+      "formula": "=SUM(M99:M100)+SUM(LongTermTradeReceivablesPY!P12:P100)",
+      "sources": [
+        {
+          "sheet": "LongTermTradeReceivablesPY",
+          "ref": "P12:P100"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "CashFlowStatements",
+      "targetCell": "L8",
+      "formula": "=CashFlowIndirect!L84",
+      "sources": [
+        {
+          "sheet": "CashFlowIndirect",
+          "ref": "L84"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "CashFlowStatements",
+      "targetCell": "M8",
+      "formula": "=CashFlowIndirect!M84",
+      "sources": [
+        {
+          "sheet": "CashFlowIndirect",
+          "ref": "M84"
+        }
+      ],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "EarningsPerShare",
+      "targetCell": "L11",
+      "formula": "='Profit&Loss'!L52",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "EarningsPerShare",
+      "targetCell": "M11",
+      "formula": "='Profit&Loss'!M52",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "EarningsPerShare",
+      "targetCell": "L15",
+      "formula": "='Profit&Loss'!L52",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "EarningsPerShare",
+      "targetCell": "M15",
+      "formula": "='Profit&Loss'!M52",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "SubclsfictionOnIncome&Expenses",
+      "targetCell": "L15",
+      "formula": "='AddinlInformtionStatementOfP&L'!L88",
+      "sources": [],
+      "year": "current_or_shared"
+    },
+    {
+      "targetSheet": "SubclsfictionOnIncome&Expenses",
+      "targetCell": "M15",
+      "formula": "='AddinlInformtionStatementOfP&L'!M88",
+      "sources": [],
+      "year": "current_or_shared"
+    }
+  ]
+}
