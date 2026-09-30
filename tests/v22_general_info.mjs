@@ -1,0 +1,15 @@
+import fs from 'node:fs'; import assert from 'node:assert/strict';
+const root=new URL('..',import.meta.url);
+const app=fs.readFileSync(new URL('app.js',root),'utf8');
+const html=fs.readFileSync(new URL('index.html',root),'utf8');
+const bundle=fs.readFileSync(new URL('app-bundled.js',root),'utf8');
+for(const q of ['in-ca:NameOfCompany','in-ca:CorporateIdentityNumber','in-ca:PermanentAccountNumberOfEntity','in-ca:DateOfStartOfReportingPeriod','in-ca:DateOfEndOfReportingPeriod','in-ca:NatureOfReportStandaloneConsolidated','in-ca:DescriptionOfPresentationCurrency','in-ca:LevelOfRoundingUsedInFinancialStatements','in-ca:TypeOfCashFlowStatement'])assert.match(app,new RegExp(q.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')));
+assert.match(app,/APP_VERSION='22\.5\.0'/);assert.match(app,/mca-cni-xbrl-project-v22\.5\.json/);assert.match(app,/mca-cni-instance-v22\.5\.xml/);
+assert.match(html,/application-version" content="22\.5\.0"/);assert.match(html,/app-bundled\.js\?v=22\.5\.0/);
+assert.equal(bundle.includes("const APP_VERSION='22.5.0'"),true);
+const bundleStart=bundle.indexOf('window.MCA_DATA=')+'window.MCA_DATA='.length;const bundleEnd=bundle.indexOf('\nconst WORKBOOK_TABLE_SCHEMA=',bundleStart);
+const data=JSON.parse(bundle.slice(bundleStart,bundleEnd).replace(/;\s*$/,''));
+assert.equal(data.meta.primaryTableCount,92);assert.equal(data.meta.typedDomainCount,44);assert.ok(data.elements.some(e=>e.prefix==='in-ca'&&e.name==='NameOfCompany'));
+const generalRole=data.definitions.filter(r=>r.role==='[400100] Disclosure of general information about company').map(r=>r.name);
+for(const n of ['ProductOrServiceCategoryITC4DigitCode','DescriptionOfProductOrServiceCategory','TurnoverOfProductOrServiceCategory','HighestTurnoverContributingProductOrServiceITC8DigitCode','DescriptionOfProductOrService','UnitOfMeasurementOfHighestContributingProductOrService','TurnoverOfHighestContributingProductOrService','QuantityOfHighestContributingProductOrServiceInUom'])assert.ok(generalRole.includes(n),n+' missing from 400100 definition');
+console.log('PASS: V22.5 general-information/taxonomy release checks');
