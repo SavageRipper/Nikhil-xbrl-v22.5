@@ -1,0 +1,35 @@
+{
+  "authority_order": [
+    "C&I Taxonomy 2016 V1.2 / 31-03-2016",
+    "C&I Business Rules V1.3",
+    "MCA C&I Filing Manual V4.0",
+    "Supplied MCA-validated/reference XBRL instances",
+    "Supplied CompuxBRL workbook"
+  ],
+  "taxonomy_definition_counts": {
+    "all": 92,
+    "notAll": 74,
+    "dimensionDefaults": 45,
+    "typedDomainElements": 44
+  },
+  "table_model_count": 92,
+  "official_validator": "MCA XBRL Validation Tool V5.1 (external final authority; not executed in this build)",
+  "source_files": {
+    "Final_C_and_I_Taxonomy_2016_V1.2.zip": {
+      "sha256": "e2ed0455cdeb852ce10e38f7e0bbacb194968408d9ef6a731348baf3a04e37b7",
+      "bytes": 2078418
+    },
+    "Filing_Manual_CNI_V4.0.pdf": {
+      "sha256": "722bc7bc606bc2dd7c0978cdd6150f17d079fdb997803a2cb69b3129ebc1a932",
+      "bytes": 690941
+    },
+    "Annexure II Main Taxonomy V2 (1).xls": {
+      "sha256": "eba38194179e61061e699479b56564b77e753f2726516f78b44e2f734f8ff83b",
+      "bytes": 2873344
+    },
+    "Final_Business_Rule_C&I_Taxonomy_2016_V1.3.xls": {
+      "sha256": "70faff6f5e33d5cfa58d3c9ffe13853b838e18bcb064d34e317b9a4d8d679648",
+      "bytes": 557568
+    }
+  }
+}
