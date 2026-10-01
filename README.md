@@ -1,78 +1,120 @@
-# MCA C&I XBRL Workbench V22.5.0
+# MCA C&I XBRL Workbench V22.6.0
 
-V22.5 is the release-hardening build of the local-first MCA C&I XBRL preparation and instance-generation workbench.
+V22.6 is the hardened, validator-ready release of the local-first MCA C&I XBRL preparation and instance-generation workbench.
+
+This release is designed to generate an MCA C&I XBRL instance from filing inputs while preserving taxonomy structure, dimensions, periods, units, source context identity, and source decimals. The official MCA XBRL Validator V5.1 remains the final external validation authority. V22.6 does not claim that an instance is MCA-compliant until that exact generated XML has passed MCA V5.1.
 
 ## Authority order
-
-The implementation is governed by the supplied MCA C&I source material:
 
 1. C&I Taxonomy 2016 V1.2 / 31-03-2016
 2. C&I Business Rules V1.3
 3. MCA C&I Filing Manual V4.0
-4. Supplied MCA-validated/reference XBRL instances
-5. Supplied CompuxBRL workbook and its formulas/cross-sheet relationships
+4. MCA-validated/reference XBRL instances supplied for regression
+5. Supplied CompuxBRL workbook, formulas and cross-sheet relationships
 
-The official MCA XBRL Validation Tool remains the final external authority. This package does **not** claim official MCA V5.1 validation execution.
+## V22.6 hardening
 
-## V22.5 P0 fixes
+### One authoritative XML importer
 
-- Added the complete taxonomy definition constraint inventory: **92 `all` hypercubes, 74 `notAll` constraints, and 45 dimension-default relationships**.
-- Generated-instance validation now checks dimensional contexts against those MCA definition constraints.
-- Explicit default members are blocked; default members are omitted from UI selectors and are treated as inferred rather than serialized.
-- Typed dimensions remain first-class context data and are serialized as `xbrldi:typedMember` with the taxonomy typed-domain QName.
-- Typed axes are editable directly inside the horizontal dimensional table engine rather than through explicit-member dropdowns.
-- Typed values participate in context/row identity.
-- Imported contexts are retained alongside filing contexts, with source context IDs preserved and collision-safe export IDs.
-- Imported prior-year ordinary facts synchronize their canonical occurrence when the user edits the Previous Year field.
-- Source decimals remain attached to imported fact occurrences and dimensional table rows.
-- The generated context serializer now retains typed dimensions instead of silently dropping them.
-- The internal dimensional gate checks duplicate axes, valid axis/member combinations, typed-domain compatibility, hypercube compatibility and `notAll` exclusions.
+The previous layered importer generations have been removed from app.js. The authoritative path is now:
 
-## V22.5 P1 fixes
+parse XML → normalize contexts/units/facts → resolve source context → classify source period → resolve dimensions → resolve taxonomy table → project latest source year to Previous Year → retain canonical source occurrences
 
-- One authoritative `openDimensionalTable()` path remains; the previous duplicate unguarded opener is removed.
-- Table buttons now visibly respect MCA applicability conditions.
-- Conditional table evaluation supports the existing Yes/No, entered, `> 0`, `= 0`, AND/OR and standalone/consolidated forms.
-- Advanced business-rule checks cover conditional mandatory/blanking, alternatives, equality/matching, relational comparisons, direct positive-value constraints, CIN/PAN validity, date sequencing, 18-month duration checks and repetitive-dimensional uniqueness.
-- Current/prior values remain independently stored.
-- Six presentation scales remain supported: Actuals, Thousands, Lakhs, Millions, Crores and Billions.
-- Direct and indirect cash-flow disclosures remain mutually exclusive.
-- The CompuxBRL horizontal table/formula/cross-sheet engine remains in place.
-- 92 taxonomy tables remain catalogued and anchored to their taxonomy presentation abstracts.
-- V22.5 includes the complete supplied taxonomy source ZIP, Filing Manual, business-rule workbook and authority manifest under `MCA_CNI_AUTHORITY/`.
+app.js contains one importXml() implementation and one V22.6 importer implementation. The old baseImportXmlRaw, baseImportXml and undefined exportCtxId paths are gone.
 
-## Release QA
+### Context identity and year projection
 
-The V22.5 release regression suite was run against the package:
+Imported context objects preserve the original XML context ID in sourceId and use collision-safe normalized IDs internally. Fact lookup resolves against the original source ID before the normalized ID, eliminating the V22.5 context mismatch.
 
-- Node syntax check: PASS
-- V22.5 release/source regression: PASS
-- Taxonomy table model: **92/92**
-- Definition `all` hypercubes: **92**
-- Definition `notAll` constraints: **74**
-- Dimension defaults: **45**
-- Typed-domain elements: **44**
-- Golden MCA-validated reference XML: **413 contexts, 3,939 fact occurrences, 61 typed-member contexts**
-- Conditional table runtime coverage: **22 rules / 44 current-prior cases / 0 failures**
-- Formula parity: PASS
-- Dropdown parity: PASS
-- Cross-sheet parity: PASS
-- Six-scale rounding regression: PASS
-- V22 table hosting/UI parity: **92/92**
-- Related-party conditional runtime: PASS
-- Current/prior period-isolation regression: PASS
+For an imported FY 2024-25 instance, the latest source reporting year (2025) is mapped into the workbench Previous Year column. The 2024 comparison year remains retained in the canonical imported source store rather than being silently selected as the previous-year value.
 
-The official MCA validator has not been executed in this environment. The intended final workflow is:
+### Dimensional reconstruction
 
-1. Build/enter the filing in V22.5.
-2. Run the workbench pre-scrutiny until there are no errors.
+Explicit and typed dimensions are preserved as part of occurrence identity. Dimensional facts are mapped to taxonomy table models using axis/member signatures rather than concept-only keys.
+
+Typed-member values remain attached to the relevant axis and typed domain. Source context identity, dimension signature, unit reference and source decimals remain available in the canonical import store.
+
+### [200500] Current investments
+
+The current-investments table is an explicit regression target. Imported CurrentInvestments facts using ClassificationOfCurrentInvestmentsAxis reconstruct the table/member combination instead of leaving the table disabled merely because the current filing-year Yes/No controller has not yet been entered.
+
+The import does not copy the imported previous-year answer into the current-year field. It only uses the source data to reconstruct the imported previous-year disclosure and its applicability evidence.
+
+### Business-rule handling
+
+The V22.6 rule engine continues to execute the supported classes already implemented in the workbench: conditional mandatory/blanking, alternatives, equality/matching, relational comparisons, positive/non-negative constraints, CIN/DIN/PAN checks, date sequencing, standalone/consolidated conditions, uniqueness and related dimensional checks.
+
+A source-clause coverage inventory is generated from the supplied Specific_rules_for_elements.csv. In the current source-text classification baseline there are 636 expanded rule clauses, of which 574 are classified as locally handled by the current executable rule patterns and 62 are not. This is a source-text engineering metric, not an official MCA coverage percentage.
+
+For relevant unsupported clauses, V22.6 blocks XML generation rather than silently treating the clause as satisfied. This deliberately favors review over false confidence.
+
+## Infobahn regression fixture
+
+The supplied Infobahn 2024-25 XBRL instance is the principal importer regression fixture.
+
+| Check | Result |
+|---|---:|
+| XML contexts | 371 |
+| XML units | 4 |
+| Non-empty fact occurrences | 2,772 |
+| Latest source-year facts | 1,464 |
+| Comparison-year facts | 1,308 |
+| Latest source year | 2025 |
+| Comparison year | 2024 |
+| Latest-year dimensional facts | 1,070 |
+| Latest-year typed-dimensional facts | 149 |
+| Typed-dimensional facts, all source years | 225 |
+| Explicit-member occurrences, all source years | 3,510 |
+| Precision attributes | 0 |
+| Scale attributes | 0 |
+| Invalid unit references | 0 |
+| Duplicate same concept/context occurrences | 0 |
+
+Specific acceptance observations include:
+
+- [200500] Notes - Current investments: CurrentInvestments is 24,677,000 for FY 2024-25 and 30,139,000 for FY 2023-24, using ClassificationOfCurrentInvestmentsAxis.
+- Borrowings contain multi-axis explicit dimensional contexts and source decimals of -3.
+- Tangible and intangible asset disclosures contain explicit dimensional contexts.
+- Typed dimensions are present in the source and are retained by the V22.6 importer model.
+- Related-party typed identities in the golden regression include RelatedParty1 through RelatedParty7 across current/prior contexts.
+
+The full measured regression is recorded in V22.6_REGRESSION_REPORT.md.
+
+## Deployment architecture
+
+The Pages entry point remains the simple root package:
+
+index.html
+app.js
+app-bundled.js
+styles.css
+
+app-bundled.js contains the bundled MCA authority data followed by the authoritative app.js application suffix. A GitHub Actions build step reconstructs the bundle from that MCA data prefix plus app.js, avoiding drift between source and deployed runtime.
+
+## Regression automation
+
+tests/v226_static_regression.py verifies:
+
+- Node syntax for app.js and app-bundled.js
+- exactly one authoritative importer in source and bundle
+- absence of legacy importer identifiers
+- V22.6 version markers
+- exact bundle/source suffix parity
+- one external Pages runtime script
+- MCA authority-data counts
+- 92 taxonomy table models
+- 44 typed-domain elements
+- the supplied business-rule clause inventory baseline
+
+GitHub Actions runs the build and regression gate on changes to the authoritative source/runtime files.
+
+## Final validation workflow
+
+1. Enter or import the filing in V22.6.
+2. Run the workbench pre-scrutiny until the internal dashboard has no blocking errors.
 3. Generate the XBRL instance.
-4. Run the generated XML through the MCA XBRL Validation Tool V5.1.
-5. Treat every MCA validator finding as authoritative and feed any finding back into the V22.5 regression suite before filing.
+4. Run that exact XML through MCA XBRL Validator V5.1.
+5. Treat every MCA validator finding as authoritative.
+6. Feed every reproducible finding back into the regression suite before filing.
 
-## Local/GitHub Pages deployment
-
-Serve or publish the package as a static site. No application server is required for the filing workflow; user data remains in the browser/local project file.
-
-Do not file generated XML solely on the basis of this internal regression suite. MCA V5.1 is the final compliance gate.
-
+V22.6 is not declared officially MCA-compliant by this repository. The release is intended to be materially stronger and validator-ready; the final compliance determination comes from MCA V5.1 on the generated instance.
