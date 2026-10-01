@@ -2002,3 +2002,5 @@ importXml=v226ImportXml;
 /* V22.6 version metadata follows the hardened importer. */
 state.appVersion=APP_VERSION;
 load();
+
+/* V22.6 bundle rebuild trigger: authoritative app.js is the bundle source. */
