@@ -9,6 +9,7 @@ on:
       - "Specific_rules_for_elements.csv"
       - "tests/v226_static_regression.py"
       - "index.html"
+      - "tests/v22_smoke.mjs"
 
 concurrency:
   group: v226-main
