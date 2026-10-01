@@ -1837,7 +1837,7 @@ restoreProjectFile=function(data){
    while the full CompuxBRL-style table is opened as a horizontal modal. */
 function v22FinalTableCard(role,model,fy,py){
   const schema=v22WorkbookSchema(model),title=String(model.label||model.name||'').replace(/\s*\[Table\]\s*$/i,'');
-  const inactive=typeof v213ConditionalInactive==='function'&&v213ConditionalInactive(model.tableQ,'current');
+  const inactive=typeof v213ConditionalInactive==='function'&&v213ConditionalInactive(model.tableQ,'current')&&!v226ImportedTableApplicable(model);
   return `<div class="card v15-table-card v22-table-link-card"><div class="toolbar"><div class="grow"><h2>${esc(title)}</h2><div class="hint">${esc(schema?.workbookSheet||model.tableQ)} • ${v22ColumnModel(model).length} workbook columns • ${model.axes.length} XBRL dimension${model.axes.length===1?'':'s'}</div></div><button class="smallbtn primary" data-v22-open="${esc(v15Pack(role,model.id))}" ${inactive?'disabled':''}>See dimensional table</button></div><div class="hint">${inactive?'This table is currently not applicable under the controlling business-rule condition.':'The complete table opens in a horizontal table engine. Column order and axis selectors follow the supplied CompuxBRL workbook.'}</div></div>`;
 }
 v15TableCard=v22FinalTableCard;
@@ -1939,25 +1939,6 @@ function v226BlockingUnsupportedRuleChecks(kind){
   const src=kind==='prior'?state.prior:state.values,seen=new Set();
   for(const r of rows){const e=elementForName(r.element);if(!e||e.abstract==='true'||known.test(String(r.rule||'')))continue;const k=`${e.prefix}:${e.name}`,value=src[k]??'';const cond=conditionSatisfied(r.rule,kind);const active=nonblank(value)||cond===true;if(!active)continue;const key=kind+'|'+k+'|'+r.rule;if(seen.has(key))continue;seen.add(key);addRuleError('MCA unsupported rule clause',k,'This supplied MCA business-rule clause is not safely executable by the local rule engine, so XML generation is blocked pending review.',String(r.rule));}
 }
-function v226ImportedApplicabilityForCondition(name,kind){
-  if(kind==='current'&&nonblank(state.values?.[name]))return state.values[name];
-  if(kind==='prior'&&nonblank(state.prior?.[name]))return state.prior[name];
-  return state._v226ImportedApplicabilityFacts?.[name]??'';
-}
-function v226InstallApplicabilityFallback(){
-  if(typeof conditionSatisfied!=='function'||typeof v226ImportedApplicabilityForCondition!=='function')return;
-  if(window.__v226ConditionPatched)return;window.__v226ConditionPatched=true;
-  const baseConditionSatisfied=conditionSatisfied;
-  window.__v226BaseConditionSatisfied=baseConditionSatisfied;
-  conditionSatisfied=function(text,kind='current'){
-    const t=String(text||''),names=conceptNameFromText(t);if(!names.length)return baseConditionSatisfied(t,kind);
-    const originals={};let changed=false;
-    for(const n of names){const q=getConceptKey(n);if(!q)continue;const v=v226ImportedApplicabilityForCondition(q,kind);if(nonblank(v)&&!nonblank((kind==='prior'?state.prior:state.values)?.[q])){originals[q]=(kind==='prior'?state.prior:state.values)[q];(kind==='prior'?state.prior:state.values)[q]=v;changed=true;}}
-    const result=baseConditionSatisfied(t,kind);
-    if(changed)for(const q of Object.keys(originals)){if(kind==='prior')delete state.prior[q];else delete state.values[q];}
-    return result;
-  };
-}
 function v226ImportXml(file){
   showBusy('Importing previous-year XBRL','Parsing contexts, units, facts, periods and dimensions…');
   const reader=new FileReader();
@@ -1970,7 +1951,7 @@ function v226ImportXml(file){
       const importedContexts=contextNodes.map(c=>v226NormalizeContextNode(c,nsMap)),bySource=new Map(importedContexts.filter(c=>c.sourceId).map(c=>[c.sourceId,c])),byNormalized=new Map(importedContexts.filter(c=>c.id).map(c=>[c.id,c]));
       const importedUnits=unitNodes.map(u=>v226NormalizeUnitNode(u,nsMap));
       const sourceYears=importedContexts.map(v226ContextYear).filter(y=>Number.isFinite(y)),sourceYear=sourceYears.length?Math.max(...sourceYears):null,comparisonYear=sourceYear?sourceYear-1:null;
-      state.importedContexts=importedContexts;state.importedUnits=importedUnits;state.prior={};state.priorDecimals={};state.priorFacts={};state.historicalFacts={};state.factOccurrences={current:[],prior:[]};state.dimTables={};state._v226ImportedTableApplicability={};state._v226ImportedApplicabilityFacts={};state.priorCalculated={};
+      state.importedContexts=importedContexts;state.importedUnits=importedUnits;state.prior={};state.priorDecimals={};state.priorFacts={};state.historicalFacts={};state.factOccurrences={current:[],prior:[]};state.dimTables={};state._v226ImportedTableApplicability={};state.priorCalculated={};
       state.xbrlStore={version:2,source:'import',sourceYear,comparisonYear,contexts:importedContexts,units:importedUnits,facts:[],factIndex:{}};
       const allChildren=[...root.children],facts=allChildren.filter(n=>n.namespaceURI&&n.localName&&!['schemaRef','context','unit','footnoteLink','tuple'].includes(n.localName));
       let rawFactCount=0,latestFactCount=0,projectedCount=0,projectedDimensional=0,projectedTyped=0,unresolvedDimensional=0,unknown=0,missingContext=0,duplicates=0,multiple=0;const seen=new Map();
@@ -1985,7 +1966,7 @@ function v226ImportXml(file){
         state.xbrlStore.facts.push({...occurrence,key:factKey});(state.xbrlStore.factIndex[factKey]??=[]).push({...occurrence,key:factKey});(state.priorFacts[concept]??=[]).push(occurrence);
         if(element&&isLatest){latestFactCount++;const p=v226ProjectPreviousYearOccurrence(occurrence,element);if(p.projected)projectedCount++;if(p.dimensional)projectedDimensional++;if(p.typed)projectedTyped++;if(p.dimensional&&!p.projected)unresolvedDimensional++;}
         else if(element&&value){(state.historicalFacts[concept]??=[]).push(occurrence);}
-        if(element&&isLatest&&isBooleanConcept(element))state._v226ImportedApplicabilityFacts[concept]=value;
+        
       }
       const importedCin=importedContexts.map(c=>String(c.entity||'').trim().toUpperCase()).find(Boolean);
       if(importedCin&&!String(state.profile.cin||'').trim()){state.profile.cin=importedCin;diagnostics.push('Filing CIN was auto-populated from the imported XML context.');}
@@ -2004,7 +1985,7 @@ function v226ImportXml(file){
       diagnostics.push('Source context identity is preserved in canonical records as sourceContextRef; generated MCA contexts remain separate filing contexts. Source decimals are retained on imported occurrences and dimensional rows.');
       state._v226RuleCoverage=v226RuleCoverageSnapshot();
       state.importDiagnostics=diagnostics;state._v226ImportSummary={rawFactCount,latestFactCount,projectedCount,projectedDimensional,projectedTyped,contexts:contextNodes.length,units:unitNodes.length,sourceYear,comparisonYear,duplicates,multiple,unknown,missingContext};
-      v226InstallApplicabilityFallback();synchronizeAll();state._v18ImportFinishedAt=Date.now();state._v18ImportRunning=false;markDirty();hideBusy();render();
+      synchronizeAll();state._v18ImportFinishedAt=Date.now();state._v18ImportRunning=false;markDirty();hideBusy();render();
       showImportDiagnostics(file.name,latestFactCount,diagnostics,detail,contextNodes.length,unitNodes.length,rawFactCount,sourceYear);
     }catch(e){state.importDiagnostics=[String(e?.message||e)];state._v18ImportRunning=false;state._v18ImportFinishedAt=Date.now();hideBusy();try{render();}catch{}showImportDiagnostics(file.name,0,state.importDiagnostics,[],0,0,0,null);}
   };
@@ -2018,17 +1999,6 @@ importXml=v226ImportXml;
    current-year applicability controller is still blank. Current-year rules are
    not silently copied into Current; the imported controller is retained in the
    Previous Year data and canonical source store. */
-function v226PatchFinalTableApplicability(){
-  if(typeof v22FinalTableCard!=='function'||window.__v226FinalTablePatch)return;window.__v226FinalTablePatch=true;
-  const base=v22FinalTableCard;
-  v22FinalTableCard=function(role,model,fy,py){
-    const s=String(base(role,model,fy,py)||''),imported=v226ImportedTableApplicable(model);
-    if(!imported)return s;
-    return s.replace(/disabled(?=\"[^>]*data-v22-open)/i,'').replace(/<button class=\"smallbtn primary\" data-v22-open=/i,'<button class="smallbtn primary" data-v22-open=');
-  };
-}
-v226PatchFinalTableApplicability();
-
 /* V22.6 version metadata follows the hardened importer. */
 state.appVersion=APP_VERSION;
 load();
