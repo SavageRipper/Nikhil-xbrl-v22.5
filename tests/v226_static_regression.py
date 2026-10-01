@@ -24,7 +24,7 @@ run(["node","--check",str(ROOT/"app.js")])
 run(["node","--check",str(ROOT/"app-bundled.js")])
 
 # One authoritative importer in source and the rebuilt deployed bundle.
-if len(re.findall(r"function importXml\(",app)) != 1: fail("app.js must contain exactly one importXml()")
+if len(re.findall(r"function importXml\(",app)) != 0: fail("legacy function importXml() wrapper remains in app.js")
 if len(re.findall(r"function v226ImportXml\(",app)) != 1: fail("app.js must contain exactly one v226ImportXml()")
 for token in ["function baseImportXmlRaw(", "function baseImportXml(", "exportCtxId"]:
     if token in app: fail(f"legacy importer token remains: {token}")
