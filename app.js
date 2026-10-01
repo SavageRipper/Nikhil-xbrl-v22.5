@@ -2004,3 +2004,5 @@ state.appVersion=APP_VERSION;
 load();
 
 /* V22.6 bundle rebuild trigger: authoritative app.js is the bundle source. */
+
+/* V22.6 final clean bundle sync. */
