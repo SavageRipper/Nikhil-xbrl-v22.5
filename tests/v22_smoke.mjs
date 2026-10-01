@@ -23,3 +23,5 @@ assert.match(html,/app-bundled\.js/); assert.match(html,/busyOverlay/); assert.e
 assert.match(app,/function cashFlowRoleAllowed\(role\)/);
 assert.doesNotMatch(app,/\/direct\/i\.test\(String\(role\|\|''\)\).*indirect/);
 console.log('V18 smoke checks: PASS');
+
+// V22.6 CI integration marker
