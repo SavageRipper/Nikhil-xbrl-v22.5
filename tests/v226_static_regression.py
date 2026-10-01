@@ -101,3 +101,5 @@ print("  • Taxonomy definition table inventory: 92; workbook schemas: 87")
 print("  • Typed-domain elements: 44")
 print("  • Expanded MCA-specific source clauses: 637; heuristic local handling classification: 574 supported / 63 unsupported")
 print("  • Pages entrypoint: exactly one external script, V22.6.0 bundle")
+
+# V22.6 deterministic sync trigger
