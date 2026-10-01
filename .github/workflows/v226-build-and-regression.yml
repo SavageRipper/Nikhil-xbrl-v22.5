@@ -51,10 +51,10 @@ jobs:
       - name: Run V22.6 static regression
         run: python3 tests/v226_static_regression.py
 
-      - name: Sync latest main before bundle commit
+      - name: Refresh latest main and rebuild before bundle commit
         run: |
           git fetch origin main
-          git rebase origin/main
+          git reset --hard origin/main
           python3 - <<'PY'
           from pathlib import Path
           root=Path('.')
@@ -67,7 +67,6 @@ jobs:
           (root/'app-bundled.js').write_text(bundle[:cut]+app,encoding='utf-8')
           PY
           python3 tests/v226_static_regression.py
-
       - name: Commit rebuilt bundled runtime
         run: |
           if git diff --quiet -- app-bundled.js; then
