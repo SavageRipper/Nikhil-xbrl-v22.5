@@ -1937,7 +1937,16 @@ function v226BlockingUnsupportedRuleChecks(kind){
   const rows=specificRuleRows();
   const known=/mandatory|required|greater than|less than|valid (?:cin|din|pan|country)|should be unique|different from cin|different from pan|same as|should match|match with|corresponding .*entered|vice-a-versa|current financial year|standalone|consolidated|system date|one day less than|difference between start date and end date|equal to/i;
   const src=kind==='prior'?state.prior:state.values,seen=new Set();
-  for(const r of rows){const e=elementForName(r.element);if(!e||e.abstract==='true'||known.test(String(r.rule||'')))continue;const k=`${e.prefix}:${e.name}`,value=src[k]??'';const cond=conditionSatisfied(r.rule,kind);const active=nonblank(value)||cond===true;if(!active)continue;const key=kind+'|'+k+'|'+r.rule;if(seen.has(key))continue;seen.add(key);addRuleError('MCA unsupported rule clause',k,'This supplied MCA business-rule clause is not safely executable by the local rule engine, so XML generation is blocked pending review.',String(r.rule));}
+  for(const r of rows){
+    const txt=String(r.rule||'').trim();
+    /* The supplied workbook includes bare taxonomy member/axis/table labels
+       alongside prose rules. Those labels are not executable rule clauses. */
+    if(!/\s/.test(txt)||/^[A-Za-z_][A-Za-z0-9_]*(?:Member|Axis|Table|Abstract|LineItems|NotAll)$/.test(txt))continue;
+    const e=elementForName(r.element);if(!e||e.abstract==='true'||known.test(txt))continue;
+    const k=`${e.prefix}:${e.name}`,value=src[k]??'',cond=conditionSatisfied(txt,kind),active=nonblank(value)||cond===true;if(!active)continue;
+    const key=kind+'|'+k+'|'+txt;if(seen.has(key))continue;seen.add(key);
+    addRuleError('MCA unsupported rule clause',k,'This supplied MCA business-rule clause is not safely executable by the local rule engine, so XML generation is blocked pending review.',txt);
+  }
 }
 function v226ImportXml(file){
   showBusy('Importing previous-year XBRL','Parsing contexts, units, facts, periods and dimensions…');
