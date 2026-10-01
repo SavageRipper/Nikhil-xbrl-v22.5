@@ -44,7 +44,7 @@ The import does not copy the imported previous-year answer into the current-year
 
 The V22.6 rule engine continues to execute the supported classes already implemented in the workbench: conditional mandatory/blanking, alternatives, equality/matching, relational comparisons, positive/non-negative constraints, CIN/DIN/PAN checks, date sequencing, standalone/consolidated conditions, uniqueness and related dimensional checks.
 
-A source-clause coverage inventory is generated from the supplied Specific_rules_for_elements.csv. In the current source-text classification baseline there are 636 expanded rule clauses, of which 574 are classified as locally handled by the current executable rule patterns and 62 are not. This is a source-text engineering metric, not an official MCA coverage percentage.
+A source-clause coverage inventory is generated from the supplied Specific_rules_for_elements.csv. In the current source-text classification baseline there are 637 expanded rule clauses, of which 574 are classified as locally handled by the current executable rule patterns and 63 are not. This is a source-text engineering metric, not an official MCA coverage percentage.
 
 For relevant unsupported clauses, V22.6 blocks XML generation rather than silently treating the clause as satisfied. This deliberately favors review over false confidence.
 
