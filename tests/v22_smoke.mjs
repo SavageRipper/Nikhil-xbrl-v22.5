@@ -25,3 +25,5 @@ assert.doesNotMatch(app,/\/direct\/i\.test\(String\(role\|\|''\)\).*indirect/);
 console.log('V18 smoke checks: PASS');
 
 // V22.6 CI integration marker
+
+// V22.6 smoke execution marker 2
