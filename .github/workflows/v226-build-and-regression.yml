@@ -1,0 +1,55 @@
+name: V22.6 build and regression
+
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "app.js"
+      - "Specific_rules_for_elements.csv"
+      - "tests/v226_static_regression.py"
+      - "index.html"
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Rebuild bundled runtime from authoritative app.js
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          root=Path(".")
+          bundle=(root/"app-bundled.js").read_text(encoding="utf-8")
+          app=(root/"app.js").read_text(encoding="utf-8")
+          marker="const WORKBOOK_TABLE_SCHEMA"
+          cut=bundle.find(marker)
+          if cut < 0:
+              raise SystemExit("Cannot find MCA_DATA/application boundary in app-bundled.js")
+          rebuilt=bundle[:cut]+app
+          if rebuilt != bundle:
+              (root/"app-bundled.js").write_text(rebuilt,encoding="utf-8")
+              print("Bundled runtime rebuilt.")
+          else:
+              print("Bundled runtime already matches app.js.")
+          PY
+
+      - name: Run V22.6 static regression
+        run: python3 tests/v226_static_regression.py
+
+      - name: Commit rebuilt bundled runtime
+        run: |
+          if git diff --quiet -- app-bundled.js; then
+            echo "No bundled runtime change to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add app-bundled.js
+          git commit -m "Build V22.6 bundled runtime [skip ci]"
+          git push
