@@ -52,6 +52,9 @@ jobs:
       - name: Run V22.6 static regression
         run: python3 tests/v226_static_regression.py
 
+      - name: Run broader V22 smoke suite
+        run: node tests/v22_smoke.mjs
+
       - name: Refresh latest main and rebuild before bundle commit
         run: |
           git fetch origin main
