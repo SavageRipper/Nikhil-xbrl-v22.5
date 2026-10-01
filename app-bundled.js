@@ -547,7 +547,7 @@ function baseRunChecks(role){state.errors=[];state.warnings=[];state.cellIssues=
   if(!/^\d{4}-\d{2}-\d{2}$/.test(state.profile.fyStart)||!/^\d{4}-\d{2}-\d{2}$/.test(state.profile.fyEnd))addRuleError('General Information reporting dates','ReportingPeriod','Financial-year dates must be yyyy-mm-dd.','Enter valid ISO dates.');
   if(state.profile.fyStart&&state.profile.fyEnd&&state.profile.fyStart>=state.profile.fyEnd)addRuleError('General Information reporting dates','ReportingPeriod','Financial-year start must be before financial-year end.','Correct the reporting period.');
   evaluateSpecificRules('current');evaluateSpecificRules('prior');v22_5AdvancedRuleChecks('current');v22_5AdvancedRuleChecks('prior');for(const kind of ['current','prior']){const src=kind==='current'?state.values:state.prior;for(const [k,v] of Object.entries(src)){if(!nonblank(v))continue;const e=state.elements.find(x=>`${x.prefix}:${x.name}`===k);if(e&&/dateofbirth|dob/i.test(e.name)&&!/^\d{4}-\d{2}-\d{2}$/.test(String(v)))addRuleError('DOB/date format',k,'Date of birth must use yyyy-mm-dd.','Enter the date as yyyy-mm-dd.');}}evaluateGenericRules('current');evaluateGenericRules('prior');evaluateTaxonomyCalculations();evaluateWorkbookGenericRules();evaluateDimensionalRules();evaluateDimensionalTableRules();evaluateElrApplicabilityRules();
-  ruleCoverageGate();for(const [concept,v] of Object.entries(state.values)){const e=state.elements.find(x=>`${x.prefix}:${x.name}`===concept);if(!e||!nonblank(v))continue;if(isBooleanConcept(e)&&!['true','false','yes','no'].includes(String(v).toLowerCase()))addRuleError('Boolean datatype',concept,'Boolean facts must be true/false in the instance.','Select Yes or No.');}
+  state._v226RuleCoverage=v226RuleCoverageSnapshot();v226BlockingUnsupportedRuleChecks('current');v226BlockingUnsupportedRuleChecks('prior');ruleCoverageGate();for(const [concept,v] of Object.entries(state.values)){const e=state.elements.find(x=>`${x.prefix}:${x.name}`===concept);if(!e||!nonblank(v))continue;if(isBooleanConcept(e)&&!['true','false','yes','no'].includes(String(v).toLowerCase()))addRuleError('Boolean datatype',concept,'Boolean facts must be true/false in the instance.','Select Yes or No.');}
   for(const x of validateAllRichText())state.errors.push({rule:'MCA HTML guideline',concept:x.concept,message:x.message,correction:'No user content was removed. Correct the editor content and save again.'});
   // Applicability: 400100 is only for filings before FY 2014-15; consolidated restrictions from Generic Rule 13.
   const fyEnd=Number(String(state.profile.fyEnd||'').slice(0,4));if(fyEnd>=2015&&!generalInformationEnabled()){for(const k of Object.keys(state.values))if(/DisclosureOfGeneralInformationAboutCompany/i.test(k)&&nonblank(state.values[k]))addRuleError('MCA 400100 optional-section control',k,'General Information is disabled for this filing. Enable the 400100 section on its filing tab before reporting these facts.','Open the 400100 tab and enable General Information, or clear the facts.');}
@@ -1160,6 +1160,11 @@ function v22ConditionalApplicability(k,kind='current'){
   return seen?true:null;
 }
 function v22TableApplicable(role,model,yearKind='current'){
+  /* Imported source evidence can establish applicability for the imported
+     Previous-Year table even when the current-year controlling answer is blank.
+     Never copy that evidence into Current; it only unlocks review of imported
+     prior-year rows. */
+  if(yearKind==='prior'&&model&&state._v226ImportedTableApplicability?.[model.id])return true;
   const a=v22ConditionalApplicability(String(model?.tableQ||''),yearKind);
   if(a!==null)return a;
   return v22ConditionalApplicability(String(model?.name||''),yearKind);
