@@ -32,6 +32,10 @@ if "APP_VERSION='22.6.0'" not in app: fail("app.js is not V22.6.0")
 if "importXml=v226ImportXml" not in app: fail("V22.6 importer is not authoritative")
 if "DetailsOfCurrentInvestmentsTable" not in app or "ClassificationOfCurrentInvestmentsAxis" not in app:
     fail("current-investments taxonomy table/axis missing")
+if "if(yearKind==='prior'&&model&&state._v226ImportedTableApplicability?.[model.id])return true;" not in app:
+    fail("imported prior-year table applicability is not wired into the V22.6 table gate")
+if "v226BlockingUnsupportedRuleChecks('current');v226BlockingUnsupportedRuleChecks('prior');" not in app:
+    fail("unsupported MCA rule blocker is not wired into baseRunChecks")
 
 # Rebuild/deployment transition:
 # During the first V22.6 workflow run the large bundle may still be old; the
