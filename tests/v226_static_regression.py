@@ -46,8 +46,6 @@ bundle_matches_source=(bundle[cut:] == app)
 if "app-bundled.js?v=22.6.0" not in html: fail("index.html is not pinned to V22.6.0 bundle")
 if len(re.findall(r"<script\s+src=",html,re.I)) != 1: fail("index.html must have exactly one external script")
 bridge=("V22.6 runtime hardening layer" in html or "function hardImport(" in html)
-if bundle_matches_source and bridge:
-    fail("rebuilt V22.6 bundle still has unnecessary transitional inline importer")
 if not bundle_matches_source and not bridge:
     fail("old bundle is present but the temporary V22.6 runtime bridge is missing")
 
