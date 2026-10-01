@@ -6,7 +6,7 @@ const bundle=fs.readFileSync(new URL('app-bundled.js',root),'utf8');
 const html=fs.readFileSync(new URL('index.html',root),'utf8');
 const css=fs.readFileSync(new URL('styles.css',root),'utf8');
 const model=JSON.parse(fs.readFileSync(new URL('TAXONOMY_MODEL.json',root),'utf8'));
-assert.match(app,/APP_VERSION='22\.5\.0'/); assert.match(app,/PROJECT_KEY='mcaCniXbrlProjectV22_1'/);
+assert.match(app,/APP_VERSION='22.6.0'/); assert.match(app,/PROJECT_KEY='mcaCniXbrlProjectV22_1'/);
 assert.match(app,/LEGACY_PROJECT_KEYS=\[/);assert.match(app,/mcaCniXbrlProjectV22/);
 assert.match(app,/MCA_SCHEMA_REF='https:\/\/www\.mca\.gov\.in\/V3XBRL\/2016\/07\/26\/Taxonomy\/CnI\/in-ci-ent-2016-03-31\.xsd'/);
 assert.match(app,/v15TableModels/); assert.match(app,/v15EnsureTableRow/); assert.match(app,/v15CreatePrimaryMemberRows/); assert.match(app,/v18SeedGeneralFromLegacyProfile/);
@@ -14,7 +14,7 @@ assert.match(app,/cashFlowMethod/); assert.match(app,/cashFlowRoleAllowed/); ass
 assert.match(app,/IndexedDB/); assert.match(app,/projectSnapshot/); assert.match(app,/showBusy\('Running all checks'/); assert.match(app,/showBusy\('Importing previous-year XBRL'/);
 assert.doesNotMatch(app,/if\(!profileComplete\(\)\)state\.active='dashboard'/);
 for(const token of ['auth.js','MCAAuth','loginShell','authUserBadge','auth-locked','MCA-Admin@2026#X','Secure sign-in']){assert.equal(html.includes(token),false);assert.equal(css.includes(token),false);assert.equal(app.includes(token),false);assert.equal(bundle.includes(token),false);}
-const marker=bundle.indexOf('const state=');assert.ok(marker>0);assert.match(bundle,/APP_VERSION='22\.5\.0'/);assert.match(bundle,/function factsForGeneration\(kind\)/);assert.match(bundle,/function ensureBaseContexts\(\)/);assert.match(bundle,/xbrldi:typedMember/);
+const marker=bundle.indexOf('const state=');assert.ok(marker>0);assert.match(bundle,/APP_VERSION='22.6.0'/);assert.match(bundle,/function factsForGeneration\(kind\)/);assert.match(bundle,/function ensureBaseContexts\(\)/);assert.match(bundle,/xbrldi:typedMember/);
 const pre=bundle.slice(0,marker); for(const x of ['"elrCount":47','"elementCount":3616','"presentationCount":4092','"calculationCount":1051','"definitionCount":2967','"typedDomainCount":44','"primaryTableCount":92','"dimensionalTableRoleCount":87']) assert.match(pre,new RegExp(x.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')));
 assert.equal(model.tables.length,92); assert.equal(model.typedDomainElements.length,44);
 const tangible=model.tables.find(x=>x.role==='[201000] Notes - Tangible assets'); assert.ok(tangible); assert.equal(tangible.axisCount,3); assert.ok(tangible.lineItemCount>0);
